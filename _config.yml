@@ -13,15 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Pavan Joshi
+email: pavanjoshi2050@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  Personal blog for sharing my work experience
+github_username: pavanjoshi914
+minimal_mistakes_skin: dark
 search: true
 
 # Build settings
@@ -58,34 +55,37 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Pavan Joshi"
+  avatar : "/assets/images/Developer.gif"
+  bio    : "Aspiring Computer Engineer (B.Tech 2nd year). Student software developer @CircuitVerse. GSoC'2021 @CircuitVerse."
   links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/pavan-joshi-177873192/"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://pavanjoshi914.github.io/Blog/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/pavanjoshi914"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://www.instagram.com/__pavan.exe__/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/pavan-joshi-177873192/"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://pavanjoshi914.github.io/Blog/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/pavanjoshi914"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://www.instagram.com/__pavan.exe__/"
 
 defaults:
   # _posts
