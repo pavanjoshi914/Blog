@@ -11,7 +11,7 @@ At 6pm UTC (11:30 pm - India), I got an email from Google :airplane: that my pro
  
 Yay!! :stars: I made it into GSoC in my very first attempt and in very early phase of my graduation. Being a sophomore, I take this as a career elevating opportunity and a platform for great learning experience along with exposure to the real coding world.
  
-![banner](/assets/images/gsoc/post1/banner.png)
+![banner]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/post1/banner.png)
  
 In this post, I will be discussing what exactly GSoC is and how the open source industry along with GSoC is helping students and engineers in bringing out their true potential.
  
@@ -70,7 +70,7 @@ Go ahead!! start your Open Source journey with [CircuitVerse](https://github.com
  
 Here is my acceptance letter from Google :fire: :fire:
  
-![GSoC acceptance letter](/assets/images/gsoc/post1/acceptance_letter.png)
+![GSoC acceptance letter]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/post1/acceptance_letter.png)
  
 ### To know more about GSoC and my relevant project here are some of the links <br>
 
