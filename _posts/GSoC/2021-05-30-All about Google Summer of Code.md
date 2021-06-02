@@ -14,7 +14,7 @@ Yay!! :stars: I made into _**GSoC**_ in my very first attempt at an early phase 
 ![banner]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/post1/banner.png)
  
 In this post, I will be discussing what exactly GSoC is and how the Open Source industry along with GSoC are helping students and engineers all around the world to bring out their true potential.
-____________________________________________________________________________________________________________________________________________________________
+
 ## About GSOC and OPEN SOURCE
 
 ><h2>Open Source is "You are welcome to make our software better!"</h2>
