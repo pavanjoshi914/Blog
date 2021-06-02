@@ -7,13 +7,13 @@ tags:
   - GSoC
 ---
 
-At 6pm UTC i.e. (11:30 pm in _**India**_), I recieved a mail from Google :airplane: about my _**proposal**_ that it has been accepted for **_Google Summer of Code 2021_** and I am going to be a part of it:tada: :tada:.
+At 6pm UTC i.e. (11:30 pm in _**India**_), I received a mail from Google :airplane: about my _**proposal**_ that it has been accepted for **_Google Summer of Code 2021_** and I am going to be a part of it:tada: :tada:.
  
 Yay!! :stars: I made into _**GSoC**_ in my very first attempt at an early phase of my graduation. Being a _**sophomore**_, I took this as a career elevating opportunity and a platform for _**great learning experience**_ along with exposure to the _**real coding world**_.
  
 ![banner]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/post1/banner.png)
  
-In this post, I will be discussing what exactly GSoC is and how Open Source industry along with GSoC are helping students and engineers throughout world to bring out their true potential.
+In this post, I will be discussing what exactly GSoC is and how the Open Source industry along with GSoC are helping students and engineers all around the world to bring out their true potential.
 ____________________________________________________________________________________________________________________________________________________________
 ## About GSOC and OPEN SOURCE
 
