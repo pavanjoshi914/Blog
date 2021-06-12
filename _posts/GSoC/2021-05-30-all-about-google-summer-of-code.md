@@ -82,7 +82,7 @@ Go ahead!! start your Open Source journey with [CircuitVerse](https://github.com
  
 [My GSoC'2021 Project](https://summerofcode.withgoogle.com/projects/#6365426910494720)
  
-[My GSoC'2021 Project Proposal](https://drive.google.com/file/d/1AhRH7yXq4wnNvGjxIZjo-SHGfU-YD-XX/view?usp=sharing)
+[My GSoC'2021 Project Proposal](https://drive.google.com/file/d/1u9j87SfbERBLFh6RUAzzPf4DVa-TUid3/view?usp=sharing)
  
 [My Mentoring Organization](https://circuitverse.org/)
  
