@@ -1,5 +1,5 @@
 ---
-title: "My Pre GSoC Journey :computer:"
+title: "My Pre GSoC Journey"
 last_modified_at: 2021-05-25T16:20:02-05:00
 categories:
  - GSoC
@@ -60,7 +60,7 @@ _In my opinion you can create your own **curated list of organizations** and **s
 * Interest Matters!, select organization in a way where your interest lies. I wanted to work with JavaScript, consequently CircuitVerse Simulator belongs to my core interest.
 * You will hardly match all the skills required for contribution to any organization. Don't be afraid, Just Start!
 
-  🙋 **I never worked with Rails before but learned it throughout the process.**
+  🙋‍♂️ **I never worked with Rails before but learned it throughout the process.**
  
 Congratulations! :tada: :tada: You have completed your first step of the GSoC Journey 🥳 🥳.
  
