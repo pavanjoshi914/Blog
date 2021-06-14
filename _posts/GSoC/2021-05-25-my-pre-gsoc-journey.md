@@ -130,7 +130,7 @@ Doesn't matter which organization you work with or which project you select to g
 | University of Tokyo                                             | 10                     |
 | University Of Colombo School Of Computing (UCSC)                | 10                     |
  
-> As you can participate in GSoC atmost 2 times, competing with students who have already completed their GSoC one time or people coming from major technical backgrounds and from major premium institutes is hard though.😕
+> _As you can participate in GSoC atmost 2 times, competing with students who have already completed their GSoC one time or people coming from major technical backgrounds and from major premium institutes is hard though._😕
  
 In order to stand strong while proposal evaluations I kept some key sections very strong
 1. Your **_proposed solutions_** for the implementation of the project. 
