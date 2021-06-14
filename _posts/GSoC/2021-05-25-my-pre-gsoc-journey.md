@@ -9,7 +9,7 @@ tags:
  
 In my previous post, we discussed about **Open Source** and how **GSoC** as an initiative by Google is enhancing Open Source culture and projects.
 
-In case you haven't read the previous article, check it out here :arrow_forward: [GSoC-A Global Program Enhancing Open Source Culture]({% link _posts/GSoC/2021-05-30-all-about-google-summer-of-code.md %}) :smiley:
+In case you haven't read the previous article, check it out here :arrow_forward: [GSoC-A Global Program Enhancing Open Source Culture]({{ site.baseurl }}{% link _posts/GSoC/2021-05-30-all-about-google-summer-of-code.md %}) :smiley:
  
 After getting an introduction to GSoC, you might be enthusiastic to know more about cracking GSoC specially in your first attempt. :fire:
 
