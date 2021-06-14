@@ -22,17 +22,16 @@ In this post, I will be explaining about how I managed to crack GSoC in my very 
 ## GSoC Workflow :computer:
 _**Before proceeding further I will introduce you to the GSoC workflow, and what exactly you have to do in general steps**_ 
  
-:one: **Select** an Open Source **organization** (GSoC organization).
+:one: Select an Open Source organization (GSoC organization).
 
-:two: **Contribute** to Open Source organization.
+:two: Contribute to Open Source organization.
 
-:three: **Select** GSoC **project** to be applied.
+:three: Select GSoC project to be applied.
 
-:four: **Prepare** concrete **strategy** for **implementation** of GSoC project.
+:four: Prepare concrete strategy for implementation of GSoC project.
+:five: Prepare GSoC proposal on the basis of initial research.
 
-:five: Prepare **GSoC proposal** on the **basis** of **initial research**.
-
-:six: **Apply** for GSoC at **official**(GSOC) **website**.
+:six: Apply for GSoC at official(GSOC) website.
  
 ## How to Select Right Open Source Organization :computer:
  
@@ -42,7 +41,7 @@ _**Mentoring organizations selected by Google depends on a variety of major crit
 
 On the other hand, working with multiple organizations written in different technologies and preparing for multiple proposals can lead to tremendous amounts of hard work along with the possibility of rejection too :no_mouth:.
  
-In my viewpoint, I prefer a big **no** to **this strategy**. In my case, I **focused** more on my **interest** and accordingly I **analysed** back to back **frequently selected organizations** in past few years and **settled** up with the CircuitVerse and started my journey with **CircuitVerse**.
+In my viewpoint, I prefer a big **no** to **this strategy**. In my case, I **focused** more on my **interest** and accordingly I analysed back to back **frequently selected organizations** in past few years and **settled** up with the CircuitVerse and started my journey with **CircuitVerse**.
  
 Yes!, one single organization is enough. You can figure out organizations selected in 2021 [here](https://summerofcode.withgoogle.com/organizations/). 
 
@@ -57,8 +56,8 @@ _In my opinion you can create your own **curated list of organizations** and **s
 * Use [GSoC Analyser](https://www.gsocorganizations.dev) for more automated analysis.
 * Organizations which frequently get selected in the past have major chances of getting selected in future too.
 * Organizations having more slots for projects offered by Google hold better chances of its selection in future.
-* Interest Matters!, select organization in a way where your interest lies. I wanted to work with JavaScript, consequently CircuitVerse Simulator belongs to my core interest.
-* You will hardly match all the skills required for contribution to any organization. Don't be afraid, Just Start!
+* Interest Matters! Select organization your are interested with. I wanted to work with JavaScript, consequently CircuitVerse Simulator belongs to my core interest.
+* You will hardly match all the skills required for contribution to any organization. Don't be afraid, Just Start! 
 
   🙋‍♂️ **I never worked with Rails before but learned it throughout the process.**
  
@@ -74,7 +73,7 @@ After joining CircuitVerse I got the opportunity to meet awesome **engineers** a
  
 I also get an **oppurtunity** to **work with professor and engineer expert** in **digital electronics** and belonging to prestigious foreign universities. Yup! It was a **great learning experience** for me 🤩
  
-**Selecting** an **open source organization** was a **matter** of **my interest** and **technologies**, i liked to spend **most time** with. Consequently, I started **working** for **CircuitVerse** to **begin** my **coding journey**.
+Selecting an open source organization was a matter of my **interest** and **technologies**, i liked to spend most time with. Consequently, I started working for CircuitVerse to **begin** my **coding journey**.
  
 ## How to Contribute to Organizations and get started with Huge Codebases :computer:
  
@@ -106,9 +105,9 @@ I started slow, with easy tasks and ended up with development of different impor
  
 _I always either tried to **find and fix issues on my own**. I used to solve **easy to solve existing issues**, starting smaller is necessary in order to **get familiar with coding conventions** and get **initial exposure to huge codebases**._
 
-**Levelling up every next time is important though!. In the pre GSoC period I focused on developing as many features as I could in minimal time.**
+**Levelling up every next time is important though! In the pre GSoC period I focused on developing as many features as I could do in minimal time.**
 
-After the **release** of the **ideas list**, the **next 45 days before** the **GSoC application period** were **decision making**. This period has to be **used very efficiently** in order to give the **best possible proposal** along with **completion of GSoC qualification tasks** held at **organizational level**.
+After the **release** of the **ideas list**, the **next 45 days before** the **GSoC application period** were **decision making**. This period has to be used very efficiently in order to give the **best possible proposal** along with **completion of GSoC qualification tasks** held at **organizational level**.
  
 ## When students belonging to prestigious institutes IITs NITs.... are in the same race
 
@@ -131,7 +130,7 @@ Doesn't matter which organization you work with or which project you select to g
 | University of Tokyo                                             | 10                     |
 | University Of Colombo School Of Computing (UCSC)                | 10                     |
  
-As you can **participate** in GSoC **atmost 2 times**, competing with students who have **already completed their GSoC one time** or people coming from **major technical backgrounds** and from **major premium institutes** is **hard** though. 😕
+> As you can participate in GSoC atmost 2 times, competing with students who have already completed their GSoC one time or people coming from major technical backgrounds and from major premium institutes is hard though.😕
  
 In order to stand strong while proposal evaluations I kept some key sections very strong
 1. Your **_proposed solutions_** for the implementation of the project. 
@@ -180,7 +179,7 @@ From this you can conclude that if you don't have major technical experience, gi
 
  Moving to the JavaScript side, one of the **major features** developed was **"Boolean function --> Generate Circuit"**. 
  
- This feature belongs to **combinational analysis of digital circuits** in which a **user can enter any 8 variable boolean function** and **instantly** the **user is able to see an equivalent digital logic circuit on** the **canvas**.
+ This feature belongs to **combinational analysis of digital circuits in which a user can enter any 8 variable boolean function and instantly the user is able to see an equivalent digital logic circuit on the canvas.
  
 This feature includes -
  1. Generate circuit for any boolean function upto 8 variables.
@@ -218,9 +217,9 @@ You can have a look at all of them in the [proposals past contribution section](
  
 ## The Research and Proposal :computer:
  
-Before a month or two, official ideas lists are generated by mentoring organizations. And here preparation of proposal as well as research phase starts.
+Before a month or two, official ideas lists are generated by mentoring organizations. And here starts preparation of proposal as well as research phase. 
  
-**Ideas list** is nothing but a **list of projects** the organization **wants to implement in** the **upcoming GSoC**. We can ask **mentors** of **respective projects** for a **particular approach** and **start** with our **research phase**.
+**Ideas list** is nothing but a **list of projects** the organization wants to implement in the upcoming GSoC. We can ask **mentors** of **respective projects** for a **particular approach** and start with our research phase.
  
 Based on the proposed solution via research we have to prepare a strong proposal as well as pass the corresponding GSoC qualification task.
 
