@@ -38,7 +38,7 @@ _**Before proceeding further I will introduce you to the GSoC workflow, and what
  
 _**Mentoring organizations selected by Google depends on a variety of major criteria. In any case you have applied for any single organization, and it doesn't get selected by Google :expressionless:, you will be left with bare minimum time to prepare and apply for any other organization :pensive: .**_
  
-    To encounter this, many students follow a general strategy of applying to atleast 2 to 3 organizations for their selection. 
+> To encounter this, many students follow a general strategy of applying to atleast 2 to 3 organizations for their selection. 
 
 On the other hand, working with multiple organizations written in different technologies and preparing for multiple proposals can lead to tremendous amounts of hard work along with the possibility of rejection too :no_mouth:.
  
@@ -70,7 +70,7 @@ Congratulations! :tada: :tada: You have completed your first step of the GSoC Jo
  
 _I started **contributing** to **open source** in order to **level up** my **coding skills** and **keeping GSoC in mind** I **followed** the **right strategy** parallely._
  
-After joining CircuitVerse I got the opportunity to meet awesome **engineers** and **students** from **IITs, NIT's, BITS Pilani** and awesome **people** from **other prestigious institutes** of **India**.
+After joining CircuitVerse I got the opportunity to meet awesome **engineers** and **students** from **IITs, NITs** and awesome **people** from **other prestigious institutes** of **India**.
  
 I also get an **oppurtunity** to **work with professor and engineer expert** in **digital electronics** and belonging to prestigious foreign universities. Yup! It was a **great learning experience** for me 🤩
  
@@ -156,7 +156,7 @@ From this you can conclude that if you don't have major technical experience, gi
  
 * [Easy Announcement Feature](https://github.com/CircuitVerse/CircuitVerse/pull/1804)
 
- **Educational** and **business sites needs** lot of **announcements** either it might be announcement of **new product** or a **feature** or a **site maintenance** announcement
+ > **Educational** and **business sites needs** lot of **announcements** either it might be announcement of **new product** or a **feature** or a **site maintenance** announcement
  
  Developing this feature from scratch gave me a **full overview of codebase**. While working on this, I worked with almost every part of the codebase. Initially I was not familiar with the codebase, still I managed to complete it by learning concepts parallely.
  
@@ -168,11 +168,14 @@ From this you can conclude that if you don't have major technical experience, gi
  4. Database schema and logic to load announcements according to their prefixed start and end dates.
  5. CSS wrappers for dynamic announcement banners and layouts.
  6. Writing RSpec tests for the features.
+
+  **:arrow_forward: [For more checkout PR](https://github.com/CircuitVerse/CircuitVerse/pull/1804)**
  
  Hiring up big tasks in the learning phase took a lot of hard work but in the end it's worth it though. Here is the feedback from mentor - 🤩
  
  ![Mentor feedback]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/post2/image1.png)
- 
+
+
 * [Generate digital circuit equivalent to boolean function](https://github.com/CircuitVerse/CircuitVerse/pull/1971)
 
  Moving to the JavaScript side, one of the **major features** developed was **"Boolean function --> Generate Circuit"**. 
@@ -183,9 +186,14 @@ This feature includes -
  1. Generate circuit for any boolean function upto 8 variables.
  2. Minimize circuit using Quine-McCluskey Minimization Technique before its generation
  3. solving equation for different combinations/minterms and generate truth table for boolean function.
+
+ **:arrow_forward: [For more checkout PR](https://github.com/CircuitVerse/CircuitVerse/pull/1971)**
+
+ ![Demonstration]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/post2/boolean.png)
  
  [Give it a try!](https://circuitverse.org/simulator)
- 
+
+
 * [Group Invitation System](https://github.com/CircuitVerse/CircuitVerse/pull/1997)
 
 > **We all create whatsapp groups and invite members to groups via link. This feature implements similar functionality to add members in the group via group invitation link**
@@ -199,12 +207,13 @@ This feature includes -
   6. Mechanism for handling events and generating proper responses for Url expired/token expired, invalid Url, member already present in group.
   7. AJAX functionality to regenerate expired token and update DOM
   8. UI
+
+   **:arrow_forward: [For more checkout PR](https://github.com/CircuitVerse/CircuitVerse/pull/1997)**
  
 **Including them I made almost 8-10 feature oriented PR and made a great impact on the mentors in order to crack GSoC.**
 You can have a look at all of them in the [proposals past contribution section](https://drive.google.com/file/d/1u9j87SfbERBLFh6RUAzzPf4DVa-TUid3/view?usp=sharing).
  
 **Nextly, you are tested by the GSoC qualification task! Solving the GSoC qualification task as early as possible can create a great impact along with a strong and sharp proposal!!**
-
 
  
 ## The Research and Proposal :computer:
@@ -221,11 +230,13 @@ Based on the proposed solution via research we have to prepare a strong proposal
 * Study previously accepted GSoC proposal. Here is the link :arrow_forward: [Link](https://github.com/saketkc/fos-proposals)
 * Be detailed while explanation but also concise
 * At last check for grammar mistakes
+
 -------------------------------------------------------------------------------------------------------  
 
 At last you can apply for one of the most prestigious events held by Google. After a month of application review period results get announced on event main website.
  
 Always give your best!
+
 For more, stay connected!!!
  
 Best Regards ~ [Pavan](https://github.com/pavanjoshi914)
