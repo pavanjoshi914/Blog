@@ -11,9 +11,9 @@ Hii readers, I am back with one more article on GSoC, after the announcement of 
  
 In case you have missed about what GSoC is? and how I prepared for it in my pre GSoC phase? refer to the previous articles.
 
-:arrow_forward: [GSoC-A Global Program Enhancing Open Source Culture]({% link _posts/GSoC/2021-05-30-all-about-google-summer-of-code.md %}) :smiley:
+:arrow_forward: [GSoC-A Global Program Enhancing Open Source Culture]({{ site.baseurl }}{% link _posts/GSoC/2021-05-30-all-about-google-summer-of-code.md %}) :smiley:
 
-:arrow_forward: [Pre GSoC Journey]({% link _posts/GSoC/2021-05-25-my-pre-gsoc-journey.md %}) :smiley:
+:arrow_forward: [Pre GSoC Journey]({{ site.baseurl }}{% link _posts/GSoC/2021-05-25-my-pre-gsoc-journey.md %}) :smiley:
  
  
 Every year as the GSoC program officially starts, it begins with the first phase of the Program that is Community bonding period ✨✨ and it is held from May 17 to June 7.
