@@ -74,7 +74,7 @@ During this week, I also had a call with my mentors for discussing I18n architec
 
 3. <strong>Localization of CV Modules</strong>
 
-    * Week 2 was the beginning of localizing 23 modules. Out of which 6 modules where localized in 2nd week.
+    * Week 2 was the beginning of localizing 23 modules. Out of which 10 modules where localized in 2nd week.
 
     * Pushing a bunch of changes in single PR is irrelevant and also hard to review for mentors. Regarding this, I decided to create different PR for each module. Hence a proper workflow of 2 PR's was created for review and merge at a time.
 
