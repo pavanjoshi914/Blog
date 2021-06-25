@@ -70,13 +70,16 @@ During week1 I also had a call with my mentors discussing I18n architecture for 
 
 3. Localization of CV Modules
 
-    Pushing bunch of changes in PR is irrelevant and hard to reivew for mentors as well. regarding this I decided to create different PR for each module. Hence a proper workflow of 2 PR at a time for review and merge was created.
+    Week2 was the begining of localizing 23 modules outof which 6 modules where localized during week2
 
-    Week2 was the begining of localizing 23 modules outof which 6 modules where localized by me. This includes
+    Pushing bunch of changes in single PR is irrelevant and hard to reivew for mentors as well. Regarding this I decided to create different PR for each module. Hence a proper workflow of 2 PR at a time for review and merge was created.
 
-    1. introducing translation function in ERB templates.
-    2. Creating proper translation directory structure according to localization rules.
-    3. Proper Naming conventions according to localizationr rules.
+    Some of the aspects were more care is to be taken while doing I18n in modules were -
+    1. Use of proper designed module specific Rules
+    2. while introducing I18n taking care that logic doesn't break
+    3. Use of powerful features of Rails I18n API.
+    4. Directory Structure
+    5. key-value pair naming conventions along with interpolation and pluralization.
 
 
 ## What I learned
