@@ -51,7 +51,7 @@ My first PR was merged with the awesome feedback by mentors 🤩
 ![search by category]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/post4/feedback.png)
 
 
- > ***During this week, I had a call with my mentors for discussing I18n architecture for Simulator.***
+During this week, I had a call with my mentors for discussing I18n architecture for Simulator.
 
 ## Week 2: Begin with Localizing CV Modules ⏬
 
@@ -69,7 +69,7 @@ My first PR was merged with the awesome feedback by mentors 🤩
 
     * CV simulator needs backend independent architecture so that it can be decoupled in future and integrated in other platforms such as mobile app.
 
-    > ***Work in Progress & Currently doing more research on proper backend independent JS libarary for Simulator***
+Currently, I am working further and doing more research on proper backend independent JS libarary for Simulator.
 
 3. Localization of CV Modules
 
@@ -78,7 +78,7 @@ My first PR was merged with the awesome feedback by mentors 🤩
     * Pushing a bunch of changes in single PR is irrelevant and also hard to review for mentors. Regarding this, I decided to create different PR for each module. Hence a proper workflow of 2 PR's was created for review and merge at a time.
 
 
-**Some of the aspects were more care is to be taken while doing I18n in modules were**  🔷
+**Some of the aspects where more care is to be taken while doing I18n in modules were**  🔷
     
   1. Use of proper designed module specific rules.
   2. Taking care that logic doesn't break while introducing I18n
@@ -91,7 +91,7 @@ My first PR was merged with the awesome feedback by mentors 🤩
 ## What I learned 🎯
 
 * More exposure to API and data serialization
-* Creation of localization rules to give best possible infrastracture
+* Creation of localization rules to give best possible infrastructure.
 * Working with RSpec tests and behaviour driven development
 * Experience of integrating different JavaScript libraries
 * Designing backend independent I18n solutions.
