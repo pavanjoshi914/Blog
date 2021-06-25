@@ -25,7 +25,7 @@ During GSoC I will be creating ***I18n architecture*** for ***5 major technologi
 
 ---------------------------------------------------------------------------------------------------------------
 
-## WEEK 1: Turning Coffee into Code (☕ - 💻)
+## Week 1: Turning Coffee into Code (☕ - 💻)
 
 In this week, I started setting up fresh repositories for ***Rails codebase*** along with ***linters*** and my favourite extension ```RuboCop``` for Rails.
 
