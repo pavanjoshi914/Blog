@@ -7,86 +7,96 @@ tags:
  - GSoC
 ---
 
-After the comunity bonding period , GSoC coding period was officialy started on June 7. In this post I am sharing my experience during first two weeks of coding period with CircuitVerse.
+Hey folks! In this article I am sharing my first two weeks coding period experience with Circuitverse. GSOC coding period was officially started on 7 June i.e. after the community bonding period.
 
-## Details about my Project
+## My Project Details 📋 
 
-Internationalization mainly aims as creating proper I18n architecture for the platforms in order to localize or translate platform in mulitple languages.
+> **_Internationalization mainly aims at creating I18n architecture for the different platforms in order to localize or translate them in multiple languages._**
 
-In short my aim during GSoC is to make CircuitVerse platform a global platform so that platform can be introduced at global level and Indian as well as Foreign clients can make most out of it.
+In short, my aim during GSoC is to make ***CircuitVerse*** platform a ***Global Platform*** so that it can be introduced at global level. It will help both Indian as well as foriegn clients to use it efficiently and make the most out of it.
 
-During GSoC I will be creating I18n architecture for major 5 technologies used in different CircuitVerse platforms
-1. Rails (CV main platform)
-2. JavaScript (CV simulator)
-3. Jekyll (CV interactive book)
-4. Flutter (CV mobile app)
-5. DocsifyJs (CV docs)
+During GSoC I will be creating ***I18n architecture*** for ***5 major technologies*** used in different CircuitVerse platforms. 
+* Rails (CV main platform) 
+* JavaScript (CV simulator)
+* Jekyll (CV interactive book) 
+* Flutter (CV mobile app)
+* DocsifyJs (CV docs)
 
-## WEEK1 - Turning coffee into code
+---------------------------------------------------------------------------------------------------------------
 
-During week1 I started with setting up fresh repositories for Rails codebase along with linters and my favourite extension ```RuboCop``` for Rails.
+## WEEK 1: Turning Coffee into Code (☕ - 💻)
 
-According to the tasks for the project divided prior the coding period following tasks were achieved during week1.
+In this week, I started setting up fresh repositories for ***Rails codebase*** along with ***linters*** and my favourite extension ```RuboCop``` for Rails.
 
-1. Adding locale to CircuitVerse API endpoint
+Prior to the coding period, the complete project was divided into multiple tasks. Among them, following tasks were acheived during Week 1. 
 
-   CircuitVerse API exports ruby objects in form of JSON via data serialization techniques using ```FastJsonapi```. Mobile app renders such data to show content of main platform in mobile app.
+1. Adding locale to CircuitVerse API endpoint 
 
-   Adding locale value and updating JSON Schema of User API will help in using same locale value used by user in main platform in mobile app also.
+      * CircuitVerse API exports ruby objects in form of JSON via data serialization techniques using ```FastJsonapi```. Mobile app renders such data to show content of main platform in mobile app.
+
+      * Adding locale value and updating JSON Schema of User API will help in using same locale value used by user in main platform in mobile app also.
 
 2. Using ISO standards for locale on frontend
 
-    Next task was converting locale acronymns into full names following ```ISO 639-1 standard language codes.``` and integrate them with CV forms. This is helpfull in picking up desired language almost instantly
+      * Next task was to convert locale acronymns into full names following ```ISO 639-1 standard language codes```. and integrating them with CV forms. This is helpful in picking up desired language almost instantly.
 
 3. Initial I18n setup in Rails
 
-    1. basic I18n setup to make use of nested directory structure
-    2. fixing rspec test to adapt new changes, updating JSON schema for users as well as project api.
-    3. other relevant tasks including prepation of yml directory structure, translating page in alternate locale etc.
+      *  Basic I18n setup to make use of nested directory structure
+      *  Fixing rspec test to adapt new changes and updating JSON schema for users as well as project API.
+      *  Other relevant tasks including prepation of yml directory structure, translating page in alternate locale, etc.
 
-My first PR was merged with the awesome feedback by mentors
+My first PR was merged with the awesome feedback by mentors 🤩 
 
 ![search by category]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/post4/feedback.png)
 
-During week1 I also had a call with my mentors discussing I18n architecture for Simulator.
 
-## Week2 - Begin with localizing CV modules
+ > ***During this week, I had a call with my mentors for discussing I18n architecture for Simulator.***
+
+## Week 2: Begin with Localizing CV Modules ⏬
 
 1. Preparing localization Rules
 
-    Week 2 started with preparaing bunch of localization rules for CV Rails platform and document them so that consistency in I18n is maintained throughout the codebase by myslef as well as by future contributors.
+      * 2nd week started with preparing bunch of localization rules for CV Rails platform and document them so that consistency in I18n is maintained throughout the codebase by myself as well as by future contributors.
 
-    This includes designing module specific rules by having proper overview of codebase.
+      * This includes designing module specific rules by having proper overview of codebase.
 
 2. Introducing first I18n architecture for Simulator
 
-    I decided to go with famous ```i18n-js``` library for giving I18n architecture to Simulator. Integration   worked great in perspective of I18n but failed in terms of dependency on Rails.
+    * I decided to go with famous ```i18n-js``` library for giving I18n architecture to Simulator. Integration worked great in perspective of I18n but failed in terms of dependency on Rails.
 
-    i18n-js is present in form of gem as well as npm library but module they use are still written in ruby and requires erb loader with webpacker for its integration.
+    * I18n-js is present in form of gem as well as npm library but module they are using are still written in ruby and requires erb loader with webpacker for its integration.
 
-    CV simulator needs backend independent architecture so that it can be decoupled in future and integrated in other platforms such as mobile app.
+    * CV simulator needs backend independent architecture so that it can be decoupled in future and integrated in other platforms such as mobile app.
 
-    Work in Progress!!, currently doing more research on proper backend independent JS libarary for Simualator
+    > ***Work in Progress & Currently doing more research on proper backend independent JS libarary for Simulator***
 
 3. Localization of CV Modules
 
-    Week2 was the begining of localizing 23 modules outof which 6 modules where localized during week2
+    * Week 2 was the beginning of localizing 23 modules. Out of which 6 modules where localized in 2nd week.
 
-    Pushing bunch of changes in single PR is irrelevant and hard to reivew for mentors as well. Regarding this I decided to create different PR for each module. Hence a proper workflow of 2 PR at a time for review and merge was created.
-
-    Some of the aspects were more care is to be taken while doing I18n in modules were -
-    1. Use of proper designed module specific Rules
-    2. while introducing I18n taking care that logic doesn't break
-    3. Use of powerful features of Rails I18n API.
-    4. Directory Structure
-    5. key-value pair naming conventions along with interpolation and pluralization.
+    * Pushing a bunch of changes in single PR is irrelevant and also hard to review for mentors. Regarding this, I decided to create different PR for each module. Hence a proper workflow of 2 PR's was created for review and merge at a time.
 
 
-## What I learned
+**Some of the aspects were more care is to be taken while doing I18n in modules were**  🔷
+    
+  1. Use of proper designed module specific rules.
+  2. Taking care that logic doesn't break while introducing I18n
+  3. Use of powerful features of Rails I18n API.
+  4. Directory Structure
+  5. Key-value pair naming conventions along with interpolation and pluralization.
 
-1. More exposure to API and data serialization
-2. Creation of localization rules to give best possible infrastracture
-3. Working with RSpec tests and behaviour driven development
-4. Experience of integrating different JavaScript libraries
-5. Designing backend independent I18n solutions.
-5. Core knowledge of I18n and about localization of modules
+------------------------------------------------------------------------------------------------------------------------
+
+## What I learned 🎯
+
+* More exposure to API and data serialization
+* Creation of localization rules to give best possible infrastracture
+* Working with RSpec tests and behaviour driven development
+* Experience of integrating different JavaScript libraries
+* Designing backend independent I18n solutions.
+* Core knowledge of I18n and about localization of modules
+
+For more, stay connected!!
+
+Best Regards ~ Pavan
