@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-30T13:25:45+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Pavan Joshi</title><subtitle>Personal blog for sharing my work experience</subtitle><author><name>Pavan Joshi</name></author><entry><title type="html">GSoC Coding Period - Week1 + Week2 Report</title><link href="http://localhost:4000/gsoc/gsoc-coding-period-week1-2/" rel="alternate" type="text/html" title="GSoC Coding Period - Week1 + Week2 Report" /><published>2021-06-20T00:00:00+05:30</published><updated>2021-06-26T02:47:02+05:30</updated><id>http://localhost:4000/gsoc/gsoc-coding-period-week1-2</id><content type="html" xml:base="http://localhost:4000/gsoc/gsoc-coding-period-week1-2/">&lt;p&gt;Hey folks! :wave: GSOC coding period was officially started on 7 June :man_technologist: :man_technologist:. After the community bonding period this is my first article on coding period, sharing my first two weeks coding period experience with CircuitVerse.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-project-details-&quot;&gt;My Project Details 📋&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;Internationalization mainly aims at creating I18n architecture for the different platforms in order to localize or translate them in multiple languages.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In short, my aim during GSoC is to make &lt;strong&gt;&lt;em&gt;CircuitVerse&lt;/em&gt;&lt;/strong&gt; platform a &lt;strong&gt;&lt;em&gt;Global Platform&lt;/em&gt;&lt;/strong&gt; so that it can be introduced at global level. It will help both Indian as well as foriegn clients to use it efficiently and make the most out of it.&lt;/p&gt;
+
+&lt;p&gt;During GSoC I will be creating &lt;strong&gt;&lt;em&gt;I18n architecture&lt;/em&gt;&lt;/strong&gt; for &lt;strong&gt;&lt;em&gt;5 major technologies&lt;/em&gt;&lt;/strong&gt; used in different CircuitVerse platforms. &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;:one: Rails (CV main platform) &lt;br /&gt;
+:two: JavaScript (CV simulator) &lt;br /&gt;
+:three: Jekyll (CV interactive book) &lt;br /&gt;
+:four: Flutter (CV mobile app)&lt;br /&gt;
+:five: DocsifyJs (CV docs)&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;week-1-turning-coffee-into-code----&quot;&gt;Week 1: Turning Coffee into Code (☕ - 💻)&lt;/h2&gt;
+
+&lt;p&gt;In this week, I started setting up fresh repositories for &lt;strong&gt;&lt;em&gt;Rails codebase&lt;/em&gt;&lt;/strong&gt; along with &lt;strong&gt;&lt;em&gt;linters&lt;/em&gt;&lt;/strong&gt; and my favourite extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RuboCop&lt;/code&gt; for Rails.&lt;/p&gt;
+
+&lt;p&gt;Prior to the coding period, the complete project was divided into multiple tasks. Among them, following tasks were acheived during Week 1.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Adding locale to CircuitVerse API endpoint &lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;CircuitVerse API exports ruby objects in form of JSON via data serialization techniques using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FastJsonapi&lt;/code&gt;. Mobile app renders such data to show content of main platform in mobile app.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Adding locale value and updating JSON Schema of User API will help in using same locale value used by user in main platform in mobile app also.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Using ISO standards for locale on frontend&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Next task was to convert locale acronymns into full names following &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISO 639-1 standard language codes&lt;/code&gt;. and integrating them with CV forms. This is helpful in picking up desired language almost instantly.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt; Initial I18n setup in Rails&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Basic I18n setup to make use of nested directory structure&lt;/li&gt;
+      &lt;li&gt;Fixing rspec test to adapt new changes and updating JSON schema for users as well as project API.&lt;/li&gt;
+      &lt;li&gt;Other relevant tasks including prepation of yml directory structure, translating page in alternate locale, etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;My first PR was merged with the awesome feedback by mentors 🤩&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/gsoc/post4/feedback.png&quot; alt=&quot;search by category&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;During this week, I also had a call with my mentors for discussing I18n architecture for Simulator.&lt;/p&gt;
+
+&lt;h2 id=&quot;week-2-begin-with-localizing-cv-modules-&quot;&gt;Week 2: Begin with Localizing CV Modules ⏬&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt; Preparing localization Rules &lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;2nd week started with preparing bunch of localization rules for CV Rails platform and document them so that consistency in I18n is maintained throughout the codebase by myself as well as by future contributors.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;This includes designing module specific rules by having proper overview of codebase.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt; Introducing first I18n architecture for Simulator &lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;I decided to go with famous &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i18n-js&lt;/code&gt; library for giving I18n architecture to Simulator. Integration worked great in perspective of I18n but failed in terms of dependency on Rails.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;I18n-js is present in form of gem as well as npm library but module they are using are still written in ruby and requires erb loader with webpacker for its integration.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;CV simulator needs backend independent architecture so that it can be decoupled in future and integrated in other platforms such as mobile app.&lt;/p&gt;
+
+        &lt;p&gt;Currently, I am working further and doing more research on proper backend independent JS libarary for Simulator.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Localization of CV Modules&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Week 2 was the beginning of localizing 23 modules. Out of which 10 modules where localized in 2nd week.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Pushing a bunch of changes in single PR is irrelevant and also hard to review for mentors. Regarding this, I decided to create different PR for each module. Hence a proper workflow of 2 PR’s was created for review and merge at a time.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Some of the aspects where more care is to be taken while doing I18n in modules were&lt;/strong&gt;  🔷&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Use of proper designed module specific rules.&lt;/li&gt;
+  &lt;li&gt;Taking care that logic doesn’t break while introducing I18n&lt;/li&gt;
+  &lt;li&gt;Use of powerful features of Rails I18n API.&lt;/li&gt;
+  &lt;li&gt;Directory Structure&lt;/li&gt;
+  &lt;li&gt;Key-value pair naming conventions along with interpolation and pluralization.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;what-i-learned-&quot;&gt;What I learned 🎯&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;More exposure to API and data serialization&lt;/li&gt;
+  &lt;li&gt;Creation of localization rules to give best possible infrastructure.&lt;/li&gt;
+  &lt;li&gt;Working with RSpec tests and behaviour driven development&lt;/li&gt;
+  &lt;li&gt;Experience of integrating different JavaScript libraries&lt;/li&gt;
+  &lt;li&gt;Designing backend independent I18n solutions.&lt;/li&gt;
+  &lt;li&gt;Core knowledge of I18n and about localization of modules&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more, stay connected!!&lt;/p&gt;
+
+&lt;p&gt;Best Regards ~ Pavan&lt;/p&gt;</content><author><name>Pavan Joshi</name></author><category term="GSoC" /><category term="GSoC" /><summary type="html">Hey folks! :wave: GSOC coding period was officially started on 7 June :man_technologist: :man_technologist:. After the community bonding period this is my first article on coding period, sharing my first two weeks coding period experience with CircuitVerse.</summary></entry><entry><title type="html">GSoC - The Community Bonding Period</title><link href="http://localhost:4000/gsoc/community-bonding-period/" rel="alternate" type="text/html" title="GSoC - The Community Bonding Period" /><published>2021-06-03T00:00:00+05:30</published><updated>2021-06-04T02:47:02+05:30</updated><id>http://localhost:4000/gsoc/community-bonding-period</id><content type="html" xml:base="http://localhost:4000/gsoc/community-bonding-period/">&lt;p&gt;Hii readers, I am back with one more article on GSoC. After the announcement of GSoC results and after sharing my pre GSoC journey with you, GSoC period finally started on 17 may onwards, cheers!! :tada: :tada:&lt;/p&gt;
+
+&lt;p&gt;In case you’ve missed about what GSoC is? and how I prepared for it in my pre GSoC phase? refer to the previous articles. ⬇️&lt;/p&gt;
+
+&lt;p&gt;:arrow_forward: &lt;a href=&quot;/gsoc/all-about-google-summer-of-code/&quot;&gt;GSoC-A Global Program Enhancing Open Source Culture&lt;/a&gt; :smiley:&lt;/p&gt;
+
+&lt;p&gt;:arrow_forward: &lt;a href=&quot;/gsoc/my-pre-gsoc-journey/&quot;&gt;Pre GSoC Journey&lt;/a&gt; :smiley:&lt;/p&gt;
+
+&lt;p&gt;Every year as the GSoC program officially starts, it begins with the &lt;em&gt;&lt;strong&gt;first phase&lt;/strong&gt;&lt;/em&gt; of the Program that is &lt;em&gt;&lt;strong&gt;Community bonding period&lt;/strong&gt;&lt;/em&gt; ✨✨ and it is held from &lt;em&gt;&lt;strong&gt;May 17&lt;/strong&gt;&lt;/em&gt; to &lt;em&gt;&lt;strong&gt;June 7&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;In this post, I will share my community bonding period experience with CircuitVerse and how you can also utilize this time to get the best out of it.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-the-community-bonding-period-&quot;&gt;What is the Community Bonding Period ?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&lt;strong&gt;It’s the period of time between announcement of accepted students(May 17) and the time these students are expected to start coding(June 7). This is an excellent time to introduce students to the community, get them on the right mailing lists and working with their mentors on their timeline for the summer.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Community bonding period is the phase of learning more about the project and getting introduced with the community.&lt;/p&gt;
+
+&lt;p&gt;🧑‍🎓 In this period students get familiar with the codebase they have to work and form good communication with mentors and other selected GSoC students lying under the same hood.&lt;/p&gt;
+
+&lt;p&gt;Before the execution i.e Coding Period, Community bonding period serves as an important phase for learning, planning and experimenting on things before starting with the concrete implementation of the project.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;community-bonding-period-with-circuitverse&quot;&gt;Community Bonding Period with CircuitVerse&lt;/h2&gt;
+
+&lt;h3 id=&quot;the-start-&quot;&gt;&lt;em&gt;The Start&lt;/em&gt; 🔰&lt;/h3&gt;
+
+&lt;p&gt;After being grateful for being a part of GSoC with CircuitVerse.😀 I recieved a lot of congratulations and cheers from the community CircuitVerse.🤩 🎊&lt;/p&gt;
+
+&lt;p&gt;It was an immense pleasure for me after receiving a lot of appreciation from mentors as well !!🤗&lt;/p&gt;
+
+&lt;p&gt;As the community bonding period started, I was invited to attend a  &lt;em&gt;&lt;strong&gt;hand on meet call&lt;/strong&gt;&lt;/em&gt; inorder to &lt;em&gt;&lt;strong&gt;get introduced&lt;/strong&gt;&lt;/em&gt; with other &lt;em&gt;&lt;strong&gt;GSoC students and mentors&lt;/strong&gt;&lt;/em&gt;. And we also get the opportunity to share our personal experiences.&lt;/p&gt;
+
+&lt;p&gt;This was the time when I got the opportunity to meet all the awesome people of CircuitVerse with whom I worked a lot in my pre GSoC phase.&lt;/p&gt;
+
+&lt;p&gt;In the meet, I got the opportunity to meet awesome mentors for my project &lt;em&gt;Aboobacker Mk&lt;/em&gt; and &lt;em&gt;Nitish Aggarwal&lt;/em&gt;. Along with this, we were also introduced with the &lt;em&gt;general GSoC process at CircuitVerse&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also got the opportunity to have a hand on &lt;strong&gt;personal interview session&lt;/strong&gt; with &lt;em&gt;Satvik Ramaprasad&lt;/em&gt; (Founder of CircuitVerse) for further discussion on projects. It was a great learning experience to talk with him on different &lt;strong&gt;technical aspects&lt;/strong&gt; of the project.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-learning-&quot;&gt;&lt;em&gt;The Learning&lt;/em&gt; 💻&lt;/h3&gt;
+
+&lt;p&gt;After a week of introduction with mentors, creation of respective discussion channels and project dashboard for respective projects. It was time to learn more about the codebase and spend quality time discussing the implementation process for the project.&lt;/p&gt;
+
+&lt;p&gt;I used my few weeks of community bonding period for learning more about CircuitVerse codebases of different platforms.As I was familiar with a major part of the codebase, consequently I did a short overview on the remaining part of the codebase too and tried to understand technical aspects behind them.&lt;/p&gt;
+
+&lt;p&gt;In the learning period, I figured out the complete layout structure of website in detail and also designed some solutions of mine for producing quality I18n architecture for the project.&lt;/p&gt;
+
+&lt;p&gt;Along with this a brief overview of &lt;em&gt;&lt;strong&gt;simulator controls&lt;/strong&gt;&lt;/em&gt; were done by me.&lt;/p&gt;
+
+&lt;p&gt;I was working and discussing with my project mentors Aboobacker MK and Nitish Aggarwal and tried to create an approach according to their expectations for the project.&lt;/p&gt;
+
+&lt;p&gt;It was a great experience talking to mentors while discussing &lt;em&gt;&lt;strong&gt;I18n architecture&lt;/strong&gt;&lt;/em&gt; for &lt;em&gt;&lt;strong&gt;different platforms&lt;/strong&gt;&lt;/em&gt; of CircuitVerse.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-planning-️&quot;&gt;&lt;em&gt;The planning&lt;/em&gt; ✍️&lt;/h3&gt;
+
+&lt;p&gt;As I will be working on major 5 platforms written in different technologies. A proper planning was necessary for concrete implementation of the project.&lt;/p&gt;
+
+&lt;p&gt;A proper plan was created in order to have major focus on &lt;em&gt;&lt;strong&gt;Rails main platform&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;Simulator&lt;/strong&gt;&lt;/em&gt;. Accordingly, I decided to work on Rails and Simulator(JavaScript side) throughout the GSoC period and grab a few weeks for I18n implementation for other platforms.&lt;/p&gt;
+
+&lt;p&gt;I planned to divide Rails and other platforms codebase in different parts, and update my project dashboard with different tasks to be achieved in the coding period.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&lt;strong&gt;Proper dissection of tasks and projects was important to give best possible results and an easy to review process for mentors.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;the-experimentation-️&quot;&gt;&lt;em&gt;The experimentation&lt;/em&gt; ☑️&lt;/h3&gt;
+
+&lt;p&gt;Starting with setting up fresh repositories for all platforms, I started doing some practical things on codebase to get familiar with the pros and cons of my approach and opted for betterment according to it.&lt;/p&gt;
+
+&lt;p&gt;On the &lt;strong&gt;Rails&lt;/strong&gt; side I practically performed I18n tasks so that I can be clear on some technical aspects during the coding period. Along with this I worked on &lt;strong&gt;I18n solutions&lt;/strong&gt; for &lt;strong&gt;Jekyll, Flutter and DocsifyJs&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;CircuitVerse Simulator written in JavaScript needs to be decoupled in future so that it can be integrated in the mobile app, and CircuitVerse software written in electron.&lt;/p&gt;
+
+&lt;p&gt;I had a brief discussion about creating rails backend independent I18n architecture for the simulator and accordingly I had to experiment with different JavaScript libraries for it.&lt;/p&gt;
+
+&lt;p&gt;For quality code generation, I experimented with different VS Code extensions for yaml formatting and trailing spaces detection.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;tips-for-community-bonding-period-️&quot;&gt;Tips for Community Bonding Period 💁‍♂️&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use this period to design an approach according to the organization’s expectations.&lt;/li&gt;
+  &lt;li&gt;Set up a development environment and start to get more in-depth knowledge of the codebase.&lt;/li&gt;
+  &lt;li&gt;“&lt;strong&gt;Quality Code Matters&lt;/strong&gt;” - Research on tools that will help you to generate quality codes.&lt;/li&gt;
+  &lt;li&gt;Do some practical experimentation of your approach to get more familiar about pros and cons.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more, stay tuned!!&lt;/p&gt;
+
+&lt;p&gt;Best Regards ~ Pavan&lt;/p&gt;</content><author><name>Pavan Joshi</name></author><category term="GSoC" /><category term="GSoC" /><summary type="html">Hii readers, I am back with one more article on GSoC. After the announcement of GSoC results and after sharing my pre GSoC journey with you, GSoC period finally started on 17 may onwards, cheers!! :tada: :tada: In case you’ve missed about what GSoC is? and how I prepared for it in my pre GSoC phase? refer to the previous articles. ⬇️</summary></entry><entry><title type="html">GSoC - A Global Program Enhancing Open Source Culture</title><link href="http://localhost:4000/gsoc/all-about-google-summer-of-code/" rel="alternate" type="text/html" title="GSoC - A Global Program Enhancing Open Source Culture" /><published>2021-05-30T00:00:00+05:30</published><updated>2021-05-18T02:50:02+05:30</updated><id>http://localhost:4000/gsoc/all-about-google-summer-of-code</id><content type="html" xml:base="http://localhost:4000/gsoc/all-about-google-summer-of-code/">&lt;p&gt;At 6pm UTC i.e. (11:30 pm in &lt;em&gt;&lt;strong&gt;India&lt;/strong&gt;&lt;/em&gt;), I received a mail from Google :airplane: about my &lt;em&gt;&lt;strong&gt;proposal&lt;/strong&gt;&lt;/em&gt; that it has been accepted for &lt;strong&gt;&lt;em&gt;Google Summer of Code 2021&lt;/em&gt;&lt;/strong&gt; and I am going to be a part of it:tada: :tada:.&lt;/p&gt;
+
+&lt;p&gt;Yay!! :stars: I made into &lt;em&gt;&lt;strong&gt;GSoC&lt;/strong&gt;&lt;/em&gt; in my very first attempt at an early phase of my graduation. Being a &lt;em&gt;&lt;strong&gt;sophomore&lt;/strong&gt;&lt;/em&gt;, I took this as a career elevating opportunity and a platform for &lt;em&gt;&lt;strong&gt;great learning experience&lt;/strong&gt;&lt;/em&gt; along with exposure to the &lt;em&gt;&lt;strong&gt;real coding world&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/gsoc/post1/banner.png&quot; alt=&quot;banner&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this post, I will be discussing what exactly GSoC is and how the Open Source industry along with GSoC are helping students and engineers all around the world to bring out their true potential.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-gsoc-and-open-source&quot;&gt;About GSOC and OPEN SOURCE&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;h2&gt;Open Source is &quot;You are welcome to make our software better!&quot;&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Do you know, according to Wikipedia more than &lt;em&gt;&lt;strong&gt;180,000&lt;/strong&gt;&lt;/em&gt; Open Source Projects &lt;em&gt;&lt;strong&gt;(Softwares)&lt;/strong&gt;&lt;/em&gt; are already serving people throughout the world, thus Open Source Culture has yielded a tremendous growth in the Software Industry.&lt;/p&gt;
+
+&lt;p&gt;Yes!! Open Source welcomes all &lt;em&gt;&lt;strong&gt;Developers&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;Undergraduate Students&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;Engineers&lt;/strong&gt;&lt;/em&gt; to elevate their skills and gain a professional level software development experience in terms of &lt;em&gt;&lt;strong&gt;contribution&lt;/strong&gt;&lt;/em&gt; to the Open Source Software, &lt;em&gt;&lt;strong&gt;documentation&lt;/strong&gt;&lt;/em&gt; and anything that you can serve to make an &lt;em&gt;&lt;strong&gt;Open Source Software&lt;/strong&gt;&lt;/em&gt; better.&lt;/p&gt;
+
+&lt;p&gt;Recently, open source community has helped a very important mission known as &lt;em&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/readme/nasa-ingenuity-helicopter&quot;&gt;NASA’s Ingenuity Helicopter&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt; :helicopter:. This Ingenuity’s software used by NASA’s &lt;em&gt;&lt;strong&gt;First Mars Helicopter&lt;/strong&gt;&lt;/em&gt; were empowered by nearly 12,000 developers from all around the world via Open Source.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-google-summer-of-code-&quot;&gt;What is Google Summer of Code ?&lt;/h2&gt;
+
+&lt;p&gt;The Google Summer of Code, often abbreviated as GSoC, is an &lt;em&gt;&lt;strong&gt;International Annual Program&lt;/strong&gt;&lt;/em&gt; in which Google awards &lt;em&gt;&lt;strong&gt;stipends&lt;/strong&gt;&lt;/em&gt; to students who successfully complete, a free and open-source software &lt;em&gt;&lt;strong&gt;coding project&lt;/strong&gt;&lt;/em&gt; during summer. This program is open to university students aged 18 and more.&lt;/p&gt;
+
+&lt;p&gt;GSoC is an &lt;em&gt;&lt;strong&gt;initiative&lt;/strong&gt;&lt;/em&gt; to serve open source culture and is administered by Google &lt;em&gt;&lt;strong&gt;Main Headquarters&lt;/strong&gt;&lt;/em&gt; since 2005. As of now, 16,000+ students from 111 countries worked with 715 open source organizations, serving 38,000,000+ lines of code to the world through major open source applications and softwares.&lt;/p&gt;
+
+&lt;p&gt;GSoC is a &lt;b&gt;competitive program :computer:&lt;/b&gt; in which students apply to mentoring organizations and compete with other aspirants for their selection. The one who represents best possible &lt;em&gt;&lt;strong&gt;coding skills&lt;/strong&gt;&lt;/em&gt; and the &lt;em&gt;&lt;strong&gt;proposal&lt;/strong&gt;&lt;/em&gt; to achieve a particular project gets selected.&lt;/p&gt;
+
+&lt;p&gt;Selection criteria in GSoC not only depends on proposal and application of the student, but also on your &lt;em&gt;&lt;strong&gt;past experience&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;previous contributions to mentoring organizations&lt;/strong&gt;&lt;/em&gt; and many more…&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Students who complete GSoC successfully get a handsome amount of &lt;b&gt;$1500 dollars&lt;/b&gt; :dollar: as a stipend and &lt;em&gt;&lt;strong&gt;Certification of Success&lt;/strong&gt;&lt;/em&gt; from &lt;em&gt;&lt;strong&gt;Google&lt;/strong&gt;&lt;/em&gt; :boom:.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As GSoC is a global program:&lt;/p&gt;
+
+&lt;p&gt;In 2021, Students from 103 countries applied for the GSoC, from which 1292 students were selected from 69 countries.&lt;/p&gt;
+
+&lt;p&gt;GSoC not only elevates your career opportunities as a student but also have the following key benefits -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Get to learn about the working of a software industry by working on software codebases :dizzy:.&lt;/li&gt;
+  &lt;li&gt;Improve coding skills, soft skills and build your network with engineers, mentors and open source contributors :sparkles:.&lt;/li&gt;
+  &lt;li&gt;More exposure to internship and job based opportunities :airplane:.&lt;/li&gt;
+  &lt;li&gt;Handsome amount of $1500 dollars as a stipend 🤩.&lt;/li&gt;
+  &lt;li&gt;Build a strong resume along with certification of success from Google :stars:.&lt;/li&gt;
+  &lt;li&gt;Tag of being a GSoC student 😎.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;my-selection-in-gsoc&quot;&gt;My selection in GSoC&lt;/h2&gt;
+
+&lt;p&gt;I started contributing to open source, during the second semester of my B.Tech graduation. I picked an &lt;em&gt;&lt;strong&gt;organization&lt;/strong&gt;&lt;/em&gt; named &lt;em&gt;&lt;strong&gt;CircuitVerse&lt;/strong&gt;&lt;/em&gt; to begin my journey with open source.&lt;/p&gt;
+
+&lt;p&gt;During this time, I linked up with engineers and team members of CircuitVerse and &lt;em&gt;&lt;strong&gt;learnt&lt;/strong&gt;&lt;/em&gt; a lot of new things by &lt;em&gt;&lt;strong&gt;collaborating with mentors&lt;/strong&gt;&lt;/em&gt; of the organization. I applied to GSoC as a sophomore and was accepted into &lt;em&gt;&lt;strong&gt;GSoC’2021 at CircuitVerse&lt;/strong&gt;&lt;/em&gt; :tada:.&lt;/p&gt;
+
+&lt;p&gt;I will be working on &lt;em&gt;&lt;strong&gt;Internationalization (I18n)&lt;/strong&gt;&lt;/em&gt; of all CircuitVerse platforms and will be gaining work experience with varieties of technologies such as &lt;em&gt;&lt;strong&gt;Rails&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;JavaScript&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;Flutter&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;Jekyll DocsifyJs&lt;/strong&gt;&lt;/em&gt; etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;more-about-mentoring-organization&quot;&gt;More about mentoring organization&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://circuitverse.org&quot;&gt;CircuitVerse&lt;/a&gt; is a &lt;em&gt;&lt;strong&gt;digital circuit simulation platform&lt;/strong&gt;&lt;/em&gt; which offers easy to use tools for creating, sharing and learning digital logic circuits.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Along with CircuitVerse main platform (written in Rails). Community also maintains -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Simulator (In JavaScript) - For digital circuit simulation&lt;/li&gt;
+  &lt;li&gt;Interactive Book (In Jekyll) - for learning more about Digital Circuits&lt;/li&gt;
+  &lt;li&gt;Mobile App (In flutter) - Providing interface for mobile users&lt;/li&gt;
+  &lt;li&gt;CircuitVerse Desktop App (in electron) - Providing offline interface for desktop users&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Go ahead!! start your Open Source journey with &lt;a href=&quot;https://github.com/CircuitVerse&quot;&gt;CircuitVerse&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This is my acceptance letter from Google&lt;/strong&gt; :fire: :fire:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/gsoc/post1/acceptance_letter.png&quot; alt=&quot;GSoC acceptance letter&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;project-details&quot;&gt;Project Details&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;GSoC Main Portal&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#6365426910494720&quot;&gt;My GSoC’2021 Project&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/1u9j87SfbERBLFh6RUAzzPf4DVa-TUid3/view?usp=sharing&quot;&gt;My GSoC’2021 Project Proposal&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://circuitverse.org/&quot;&gt;My Mentoring Organization&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For more, stay connected!!!&lt;/p&gt;
+
+&lt;p&gt;Best Regards ~ &lt;a href=&quot;https://github.com/pavanjoshi914&quot;&gt;Pavan&lt;/a&gt;&lt;/p&gt;</content><author><name>Pavan Joshi</name></author><category term="GSoC" /><category term="GSoC" /><summary type="html">At 6pm UTC i.e. (11:30 pm in India), I received a mail from Google :airplane: about my proposal that it has been accepted for Google Summer of Code 2021 and I am going to be a part of it:tada: :tada:. Yay!! :stars: I made into GSoC in my very first attempt at an early phase of my graduation. Being a sophomore, I took this as a career elevating opportunity and a platform for great learning experience along with exposure to the real coding world. In this post, I will be discussing what exactly GSoC is and how the Open Source industry along with GSoC are helping students and engineers all around the world to bring out their true potential.</summary></entry><entry><title type="html">My Pre GSoC Journey</title><link href="http://localhost:4000/gsoc/my-pre-gsoc-journey/" rel="alternate" type="text/html" title="My Pre GSoC Journey" /><published>2021-05-25T00:00:00+05:30</published><updated>2021-05-26T02:50:02+05:30</updated><id>http://localhost:4000/gsoc/my-pre-gsoc-journey</id><content type="html" xml:base="http://localhost:4000/gsoc/my-pre-gsoc-journey/">&lt;p&gt;In my previous post, we discussed about &lt;strong&gt;Open Source&lt;/strong&gt; and how &lt;strong&gt;GSoC&lt;/strong&gt; as an initiative by Google is enhancing Open Source culture and projects.&lt;/p&gt;
+
+&lt;p&gt;In case you haven’t read the previous article, check it out here :arrow_forward: &lt;a href=&quot;/gsoc/all-about-google-summer-of-code/&quot;&gt;GSoC-A Global Program Enhancing Open Source Culture&lt;/a&gt; :smiley:&lt;/p&gt;
+
+&lt;p&gt;After getting an introduction to GSoC, you might be enthusiastic to know more about cracking GSoC specially in your first attempt. :fire:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Don’t have a tag of prestigious institutes like IITs, NITs or BITS Pilani ? Aspiring to take your first step for a great engineering career and for a successful selection in GSoC ? :dizzy: You are at the right place!&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this post, I will be explaining about how I managed to crack GSoC in my very first attempt and how I overcame all the challenges among students from very prestigious institutes also competing for the same :fireworks:.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;gsoc-workflow-computer&quot;&gt;GSoC Workflow :computer:&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Before proceeding further I will introduce you to the GSoC workflow, and what exactly you have to do in general steps&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;:one: Select an Open Source organization (GSoC organization).&lt;/p&gt;
+
+&lt;p&gt;:two: Contribute to Open Source organization.&lt;/p&gt;
+
+&lt;p&gt;:three: Select GSoC project to be applied.&lt;/p&gt;
+
+&lt;p&gt;:four: Prepare concrete strategy for implementation of GSoC project.
+:five: Prepare GSoC proposal on the basis of initial research.&lt;/p&gt;
+
+&lt;p&gt;:six: Apply for GSoC at official(GSOC) website.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-select-right-open-source-organization-computer&quot;&gt;How to Select Right Open Source Organization :computer:&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Mentoring organizations selected by Google depends on a variety of major criteria. In any case you have applied for any single organization, and it doesn’t get selected by Google :expressionless:, you will be left with bare minimum time to prepare and apply for any other organization :pensive: .&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To encounter this, many students follow a general strategy of applying to atleast 2 to 3 organizations for their selection.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;On the other hand, working with multiple organizations written in different technologies and preparing for multiple proposals can lead to tremendous amounts of hard work along with the possibility of rejection too :no_mouth:.&lt;/p&gt;
+
+&lt;p&gt;In my viewpoint, I prefer a big &lt;strong&gt;no&lt;/strong&gt; to &lt;strong&gt;this strategy&lt;/strong&gt;. In my case, I &lt;strong&gt;focused&lt;/strong&gt; more on my &lt;strong&gt;interest&lt;/strong&gt; and accordingly I analysed back to back &lt;strong&gt;frequently selected organizations&lt;/strong&gt; in past few years and &lt;strong&gt;settled&lt;/strong&gt; up with the CircuitVerse and started my journey with &lt;strong&gt;CircuitVerse&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Yes!, one single organization is enough. You can figure out organizations selected in 2021 &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Google also maintains a list of selected organizations in previous years through their &lt;a href=&quot;https://summerofcode.withgoogle.com/archive/&quot;&gt;archives&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/gsoc/post2/search-tool.png&quot; alt=&quot;search by category&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;In my opinion you can create your own &lt;strong&gt;curated list of organizations&lt;/strong&gt; and &lt;strong&gt;select&lt;/strong&gt; a single &lt;strong&gt;one based&lt;/strong&gt; on your &lt;strong&gt;interest&lt;/strong&gt; and &lt;strong&gt;domain of interest&lt;/strong&gt; you want to &lt;strong&gt;work&lt;/strong&gt; upon. You can also make use of &lt;strong&gt;search&lt;/strong&gt; by &lt;strong&gt;category tab&lt;/strong&gt; to sort them according to your domain of interest.&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Be a Pro&lt;/strong&gt; :sunglasses:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use &lt;a href=&quot;https://www.gsocorganizations.dev&quot;&gt;GSoC Analyser&lt;/a&gt; for more automated analysis.&lt;/li&gt;
+  &lt;li&gt;Organizations which frequently get selected in the past have major chances of getting selected in future too.&lt;/li&gt;
+  &lt;li&gt;Organizations having more slots for projects offered by Google hold better chances of its selection in future.&lt;/li&gt;
+  &lt;li&gt;Interest Matters! Select organization your are interested with. I wanted to work with JavaScript, consequently CircuitVerse Simulator belongs to my core interest.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You will hardly match all the skills required for contribution to any organization. Don’t be afraid, Just Start!&lt;/p&gt;
+
+    &lt;p&gt;🙋‍♂️ &lt;strong&gt;I never worked with Rails before but learned it throughout the process.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Congratulations! :tada: :tada: You have completed your first step of the GSoC Journey 🥳 🥳.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;my-experience-after-joining-mentoring-organization-circuitverse-computer&quot;&gt;My experience after joining mentoring organization CircuitVerse :computer:&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;I started &lt;strong&gt;contributing&lt;/strong&gt; to &lt;strong&gt;open source&lt;/strong&gt; in order to &lt;strong&gt;level up&lt;/strong&gt; my &lt;strong&gt;coding skills&lt;/strong&gt; and &lt;strong&gt;keeping GSoC in mind&lt;/strong&gt; I &lt;strong&gt;followed&lt;/strong&gt; the &lt;strong&gt;right strategy&lt;/strong&gt; parallely.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;After joining CircuitVerse I got the opportunity to meet awesome &lt;strong&gt;engineers&lt;/strong&gt; and &lt;strong&gt;students&lt;/strong&gt; from &lt;strong&gt;IITs, NITs&lt;/strong&gt; and awesome &lt;strong&gt;people&lt;/strong&gt; from &lt;strong&gt;other prestigious institutes&lt;/strong&gt; of &lt;strong&gt;India&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also get an &lt;strong&gt;oppurtunity&lt;/strong&gt; to &lt;strong&gt;work with professor and engineer expert&lt;/strong&gt; in &lt;strong&gt;digital electronics&lt;/strong&gt; and belonging to prestigious foreign universities. Yup! It was a &lt;strong&gt;great learning experience&lt;/strong&gt; for me 🤩&lt;/p&gt;
+
+&lt;p&gt;Selecting an open source organization was a matter of my &lt;strong&gt;interest&lt;/strong&gt; and &lt;strong&gt;technologies&lt;/strong&gt;, i liked to spend most time with. Consequently, I started working for CircuitVerse to &lt;strong&gt;begin&lt;/strong&gt; my &lt;strong&gt;coding journey&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-contribute-to-organizations-and-get-started-with-huge-codebases-computer&quot;&gt;How to Contribute to Organizations and get started with Huge Codebases :computer:&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;After joining&lt;/strong&gt; an &lt;strong&gt;organization&lt;/strong&gt; on their &lt;strong&gt;Slack channels&lt;/strong&gt; or &lt;strong&gt;IRC channels&lt;/strong&gt; (Depends on what organization prefers for conversation), a great way to &lt;strong&gt;begin&lt;/strong&gt; is &lt;strong&gt;setting&lt;/strong&gt; up a &lt;strong&gt;local development environment&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;After gathering more information about &lt;strong&gt;codebases&lt;/strong&gt;, organization maintain and &lt;strong&gt;technologies&lt;/strong&gt; used in them, you can &lt;strong&gt;begin&lt;/strong&gt; with your &lt;strong&gt;contributions&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can also &lt;strong&gt;ask mentors&lt;/strong&gt; and &lt;strong&gt;collaborators&lt;/strong&gt; for &lt;strong&gt;good first tasks&lt;/strong&gt; to &lt;strong&gt;assign&lt;/strong&gt; you so that you can start working on them. Initially, it is important to &lt;strong&gt;start&lt;/strong&gt; with &lt;strong&gt;easy tasks&lt;/strong&gt; to get familiar with &lt;strong&gt;coding conventions of organization&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Yes! &lt;strong&gt;Reading&lt;/strong&gt; all the &lt;strong&gt;documentation&lt;/strong&gt; and &lt;strong&gt;guidelines&lt;/strong&gt; provided by the organization is an &lt;strong&gt;important aspect for quality code generation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can start contributing in terms of &lt;strong&gt;solving existing issues&lt;/strong&gt;, &lt;strong&gt;technical documentation&lt;/strong&gt;, &lt;strong&gt;finding issues&lt;/strong&gt; and &lt;strong&gt;suggesting improvements&lt;/strong&gt;, &lt;strong&gt;introducing new features&lt;/strong&gt; etc.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;Remember! Past contributions are considered very important and play a vital role while evaluating your project proposal.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Be a Pro&lt;/strong&gt; 😎&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can’t understand the whole codebase in a day, instead pick up issues and start learning and working on specific parts of the codebase related to the issue only.&lt;/li&gt;
+  &lt;li&gt;Follow the strategy of solving easy, average and then hard issues. Although, solving good enough complex issues can make your proposal stand strong as compared to others during evaluations.&lt;/li&gt;
+  &lt;li&gt;When you get an opportunity to implement any feature from scratch, grab it up and start.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Such development of features will not only make you stand different from others but also present great exposure of your capabilities in front of the mentors.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Also focus on minor frontend tasks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;my-experience-and-strategy-during-pre-gsoc-contribution&quot;&gt;My Experience and Strategy during Pre GSoC Contribution&lt;/h2&gt;
+
+&lt;p&gt;I started slow, with easy tasks and ended up with development of different important features from scratch. When I started contributing to CircuitVerse I was not much familiar with Rails. With the progress I got familiar with &lt;strong&gt;Rails&lt;/strong&gt;, &lt;strong&gt;MVC architecture&lt;/strong&gt;, &lt;strong&gt;a lot of gems&lt;/strong&gt;, &lt;strong&gt;rspec testing&lt;/strong&gt;, &lt;strong&gt;behaviour driven development&lt;/strong&gt;, &lt;strong&gt;API’s&lt;/strong&gt;, &lt;strong&gt;JWT’s&lt;/strong&gt; and a lot more.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I always either tried to &lt;strong&gt;find and fix issues on my own&lt;/strong&gt;. I used to solve &lt;strong&gt;easy to solve existing issues&lt;/strong&gt;, starting smaller is necessary in order to &lt;strong&gt;get familiar with coding conventions&lt;/strong&gt; and get &lt;strong&gt;initial exposure to huge codebases&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Levelling up every next time is important though! In the pre GSoC period I focused on developing as many features as I could do in minimal time.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After the &lt;strong&gt;release&lt;/strong&gt; of the &lt;strong&gt;ideas list&lt;/strong&gt;, the &lt;strong&gt;next 45 days before&lt;/strong&gt; the &lt;strong&gt;GSoC application period&lt;/strong&gt; were &lt;strong&gt;decision making&lt;/strong&gt;. This period has to be used very efficiently in order to give the &lt;strong&gt;best possible proposal&lt;/strong&gt; along with &lt;strong&gt;completion of GSoC qualification tasks&lt;/strong&gt; held at &lt;strong&gt;organizational level&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;when-students-belonging-to-prestigious-institutes-iits-nits-are-in-the-same-race&quot;&gt;When students belonging to prestigious institutes IITs NITs…. are in the same race&lt;/h2&gt;
+
+&lt;p&gt;Doesn’t matter which organization you work with or which project you select to go with, you will always be finding students belonging to other prestigious institutes competing for the same project.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Here is the curative list of most accepted students from Indian and Foreign Universities for GSoC.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;University&lt;/th&gt;
+      &lt;th&gt;# of Accepted Students&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Indian Institute of Technology, Roorkee&lt;/td&gt;
+      &lt;td&gt;48&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Indian Institute of Technology, Kanpur&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;International Institute of Information Technology, Hyderabad&lt;/td&gt;
+      &lt;td&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;National Institute of Technology Karnataka, Surathkal&lt;/td&gt;
+      &lt;td&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Birla Institute of Technology and Science, Pilani (BITS Pilani)&lt;/td&gt;
+      &lt;td&gt;13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Indian Institute of Technology, Kharagpur&lt;/td&gt;
+      &lt;td&gt;13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Indian Institute of Technology (BHU), Varanasi&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;University of Moratuwa&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;National Institute of Technology, Hamirpur&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Amrita Vishwa Vidyapeetham, Amritapuri Campus&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;University of Tokyo&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;University Of Colombo School Of Computing (UCSC)&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;As you can participate in GSoC atmost 2 times, competing with students who have already completed their GSoC one time or people coming from major technical backgrounds and from major premium institutes is hard though.😕&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In order to stand strong while proposal evaluations I kept some key sections very strong&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Your &lt;strong&gt;&lt;em&gt;proposed solutions&lt;/em&gt;&lt;/strong&gt; for the implementation of the project.&lt;/li&gt;
+  &lt;li&gt;Your &lt;strong&gt;&lt;em&gt;past contributions&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;Regular working&lt;/em&gt;&lt;/strong&gt; with organization&lt;/li&gt;
+  &lt;li&gt;GSoC &lt;strong&gt;&lt;em&gt;qualification task&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;Past experience&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Apart from this, I helped other contributors to begin their journey with organization, participating in important discussions, suggesting solutions, reviewing others PR’s and giving opinions for betterment helped a lot to take up the edge.&lt;/p&gt;
+
+&lt;p&gt;In short it’s all about proving your own capabilities in front of an organization via contributions and different aspects.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;One of the best ways to do this is always taking up tasks which are labelled as urgent or important and tasks which are most applicable in the sense of organization.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Whenever I got a chance to develop features from scratch, it was totally worth it to grab up fast and hit a bullseye! :rocket:&lt;/p&gt;
+
+&lt;p&gt;From this you can conclude that if you don’t have major technical experience, giving valuable and applicative contributions to the organization and overall strong proposed solution for implementation of the project will be the key for you.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;some-of-my-contributions-that-created-great-impact&quot;&gt;Some of my contributions that created great impact&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/CircuitVerse/CircuitVerse/pull/1804&quot;&gt;Easy Announcement Feature&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Educational&lt;/strong&gt; and &lt;strong&gt;business sites needs&lt;/strong&gt; lot of &lt;strong&gt;announcements&lt;/strong&gt; either it might be announcement of &lt;strong&gt;new product&lt;/strong&gt; or a &lt;strong&gt;feature&lt;/strong&gt; or a &lt;strong&gt;site maintenance&lt;/strong&gt; announcement&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Developing this feature from scratch gave me a &lt;strong&gt;full overview of codebase&lt;/strong&gt;. While working on this, I worked with almost every part of the codebase. Initially I was not familiar with the codebase, still I managed to complete it by learning concepts parallely.&lt;/p&gt;
+
+&lt;p&gt;This feature includes :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Creation of MVC model for Announcement feature.&lt;/li&gt;
+  &lt;li&gt;Admin Dashboard along with new, edit, update announcement panels.&lt;/li&gt;
+  &lt;li&gt;Authentication.&lt;/li&gt;
+  &lt;li&gt;Database schema and logic to load announcements according to their prefixed start and end dates.&lt;/li&gt;
+  &lt;li&gt;CSS wrappers for dynamic announcement banners and layouts.&lt;/li&gt;
+  &lt;li&gt;Writing RSpec tests for the features.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;:arrow_forward: &lt;a href=&quot;https://github.com/CircuitVerse/CircuitVerse/pull/1804&quot;&gt;For more checkout PR&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hiring up big tasks in the learning phase took a lot of hard work but in the end it’s worth it though. Here is the feedback from mentor - 🤩&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/gsoc/post2/image1.png&quot; alt=&quot;Mentor feedback&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/CircuitVerse/CircuitVerse/pull/1971&quot;&gt;Generate digital circuit equivalent to boolean function&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Moving to the JavaScript side, one of the &lt;strong&gt;major features&lt;/strong&gt; developed was &lt;strong&gt;“Boolean function –&amp;gt; Generate Circuit”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This feature belongs to **combinational analysis of digital circuits in which a user can enter any 8 variable boolean function and instantly the user is able to see an equivalent digital logic circuit on the canvas.&lt;/p&gt;
+
+&lt;p&gt;This feature includes -&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Generate circuit for any boolean function upto 8 variables.&lt;/li&gt;
+  &lt;li&gt;Minimize circuit using Quine-McCluskey Minimization Technique before its generation&lt;/li&gt;
+  &lt;li&gt;solving equation for different combinations/minterms and generate truth table for boolean function.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;:arrow_forward: &lt;a href=&quot;https://github.com/CircuitVerse/CircuitVerse/pull/1971&quot;&gt;For more checkout PR&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/gsoc/post2/boolean.png&quot; alt=&quot;Demonstration&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://circuitverse.org/simulator&quot;&gt;Give it a try!&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/CircuitVerse/CircuitVerse/pull/1997&quot;&gt;Group Invitation System&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;We all create whatsapp groups and invite members to groups via link. This feature implements similar functionality to add members in the group via group invitation link&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This feature includes -&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;DataBase schema for group_token and expiry criteria&lt;/li&gt;
+  &lt;li&gt;New groups get a token when created&lt;/li&gt;
+  &lt;li&gt;Real time group token generation for existing groups&lt;/li&gt;
+  &lt;li&gt;Functionality to add members to group via link&lt;/li&gt;
+  &lt;li&gt;Mechanism for automatic expiration of group token every two weeks&lt;/li&gt;
+  &lt;li&gt;Mechanism for handling events and generating proper responses for Url expired/token expired, invalid Url, member already present in group.&lt;/li&gt;
+  &lt;li&gt;AJAX functionality to regenerate expired token and update DOM&lt;/li&gt;
+  &lt;li&gt;UI&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;:arrow_forward: &lt;a href=&quot;https://github.com/CircuitVerse/CircuitVerse/pull/1997&quot;&gt;For more checkout PR&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Including them I made almost 8-10 feature oriented PR and made a great impact on the mentors in order to crack GSoC.&lt;/strong&gt;
+You can have a look at all of them in the &lt;a href=&quot;https://drive.google.com/file/d/1u9j87SfbERBLFh6RUAzzPf4DVa-TUid3/view?usp=sharing&quot;&gt;proposals past contribution section&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nextly, you are tested by the GSoC qualification task! Solving the GSoC qualification task as early as possible can create a great impact along with a strong and sharp proposal!!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-research-and-proposal-computer&quot;&gt;The Research and Proposal :computer:&lt;/h2&gt;
+
+&lt;p&gt;Before a month or two, official ideas lists are generated by mentoring organizations. And here starts preparation of proposal as well as research phase.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ideas list&lt;/strong&gt; is nothing but a &lt;strong&gt;list of projects&lt;/strong&gt; the organization wants to implement in the upcoming GSoC. We can ask &lt;strong&gt;mentors&lt;/strong&gt; of &lt;strong&gt;respective projects&lt;/strong&gt; for a &lt;strong&gt;particular approach&lt;/strong&gt; and start with our research phase.&lt;/p&gt;
+
+&lt;p&gt;Based on the proposed solution via research we have to prepare a strong proposal as well as pass the corresponding GSoC qualification task.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-give-a-quality-proposal&quot;&gt;How to give a quality proposal&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Go through the community guidelines thoroughly.&lt;/li&gt;
+  &lt;li&gt;Ask for proposal template (if community provides) else design your own&lt;/li&gt;
+  &lt;li&gt;Study previously accepted GSoC proposal. Here is the link :arrow_forward: &lt;a href=&quot;https://github.com/saketkc/fos-proposals&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Be detailed while explanation but also concise&lt;/li&gt;
+  &lt;li&gt;At last check for grammar mistakes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;At last you can apply for one of the most prestigious events held by Google. After a month of application review period results get announced on event main website.&lt;/p&gt;
+
+&lt;p&gt;Always give your best!&lt;/p&gt;
+
+&lt;p&gt;For more, stay connected!!!&lt;/p&gt;
+
+&lt;p&gt;Best Regards ~ &lt;a href=&quot;https://github.com/pavanjoshi914&quot;&gt;Pavan&lt;/a&gt;&lt;/p&gt;</content><author><name>Pavan Joshi</name></author><category term="GSoC" /><category term="GSoC" /><summary type="html">In my previous post, we discussed about Open Source and how GSoC as an initiative by Google is enhancing Open Source culture and projects.</summary></entry></feed>
