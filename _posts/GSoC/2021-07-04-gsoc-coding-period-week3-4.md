@@ -7,61 +7,80 @@ tags:
 - GSoC
 ---
  
-First two weeks of coding period was a great learning experience for me along with many positive feedbacks by mentors on my pull requests.🤩🤩
+Hey Readers! The first two weeks of coding period was a great learning experience for me, along with many positive feedbacks by mentors on my pull requests.🤩😎 
  
-In the first two week, I created the I18n infrastructure for the first 10 CV modules along with some parallel coding work and experimentations.
+> _**In that duration, I created the I18n infrastructure for the first 10 CV modules along with some parallel coding work and experimentations.**_ 🏁
+
+----------------------------------------------------------------------------------------------------------------
  
-## Week3 - Working with major CV modules, different Ruby gems and mailers
+## Week 3: Working with CV Modules - Ruby Gems - Mailers 💻 
  
-Week 3 was the beginning of completing my work on the remaining major modules. Some of the modules like ```logix``` took 500 lines of code change during this week.
+It was the beginning of completing my work on the remaining major modules. Some of the modules like ```logix``` took 500 lines of code changes.
  
-Whole codebase can't be known and understood, unfamiliar modules took an ample amount of time in understanding Ruby code and JavaScript based logic along with running quality I18n processes on them.
+It was quite hard to understand and get familiar with whole codebase in so less time. Unfamiliar modules took an ample amount of time (😧) in understanding Ruby code and JavaScript based logic along with running quality I18n processes on them.
  
-This week I completed my work in 6 major modules along with provisional completion of the remaining 7 modules. Here testing and experimentation will be done in upcoming weeks before the final deployment to the CircuitVerse Servers.
+ 1. <strong>Working with modules</strong>
+
+      *  This week I completed my work in 6 major modules along with provisional completion of the remaining 7 modules. Testing and experimentation will be carried in upcoming weeks before the final deployment to the CircuitVerse Servers.
  
-I also had a hand on understanding the structure of different gems such as devise, activerecord error messages, commentators, activity notifications, mailers, paginators etc. I also got introduced with the awesome gem ```MailCatcher``` which can catch mails send locally and can show us direct results.
+ 2. <strong>Working with gems</strong>
  
-At the end of this week I completed major work on all 23 modules which is a single modules on its own 😅😂. 3 PR merged and current two under review.
+       *  I also had a strong hand on understanding the structure of different gems such as ***devise***, ***activerecord error messages***, ***commentator***, ***activity notifications***, ***mailers***, ***paginators*** etc. I also got introduced with the awesome gem ```MailCatcher``` which can catch mails send locally and can show us direct results.
  
-## Week4 - banana-I18n Integration, starting work on other modules
+At the end of this week, I finally completed my major work on all 23 modules which is a single modules on its own 💠 3 PRs merged and current two under review.
  
-During this week I felt relaxed as major work required was already done locally. I started working on ```banana-I18n``` JavaScript library along with working on controllers, helpers etc on Rails side.
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
-Before ```banana-I18n``` I proposed two integrations of ```i18n-js``` in different ways, second integration still landed with dependency of Rails I18n mapping 😶😶.
+## Week 4: ```banana-I18n``` Integration - Other Modules ⏬
  
-```banana-I18n``` library is a Pure JavaScript form of Jquery-I18n library developed by wikipedia. They also provide React and Vue bindings of the library for use in specific environments.
+During this week, I felt relaxed as major work required was already done locally. I started working on ```banana-I18n``` JavaScript library along with working on controllers, helpers etc on Rails side.
  
-In our case JavaScript modules are statically compiled by ```webpacker``` and are served on frontend. As ```banana-i18n``` is written purely in JavaScript it was a good choice at first glance.
+Before ```banana-I18n``` I proposed two integrations of ```i18n-js``` in different ways. Second integration still landed with dependency of Rails ***I18n mapping*** 😶😶.
+
+1. <strong>Working with ```banana-I18n``` library </strong>
+
+      *  ```banana-I18n``` library is a Pure JavaScript form of Jquery-I18n library developed by wikipedia. They also provide React and Vue bindings of the library for use in specific environments.
  
-Basically this library allows us the instantiation of a constructor which can hold an object named ```messages``` which when passed to the constructor, the library interprets it through their scripts and provides I18n support for JS based modules.
+      *  In our case JavaScript modules are statically compiled by ```webpacker``` and are served on frontend. As ```banana-i18n``` is written purely in JavaScript it was a good choice at first glance.
  
-Oops!😬 library don't provide their own Asynchronous mechanism to load JSON in the library, Here I had to implement loading mechanism by myself.
+      *  Basically this library allows us the instantiation of a constructor which can hold an object named ```messages``` which when passed to the constructor, the library interprets it through their scripts and provides I18n support for JS based modules.
  
-Here I tested three Asynchronous loading mechanisms
+Oops!😬 Library don't provide their own ***Asynchronous mechanism*** to load JSON in the library, Here I had to implement ***loading mechanism*** by myself.
  
-1. Use of ```Fetch API``` in Web Environment
-2. Keeping configuration in Web Environment and implement ```CommonJs``` methods via ```RequireJs library```
-3. Use ```ES6``` or ```CommonJs``` environment provided by webpacker
+Here I tested three Asynchronous loading mechanisms ⤵️
  
-First method is a very basic method but uses ```HTTP calls for Asynchronous loading```, this won't play nicely in offline apps hence was eliminated after discussion with mentors.
+i. Use of ```Fetch API``` in Web Environment
+
+ii. Keeping configuration in Web Environment and implement ```CommonJs``` methods via ```RequireJs library```
+
+iii. Use ```ES6``` or ```CommonJs``` environment provided by webpacker
  
-Second method depends on external dependency, consequently I tried to avoid using this method.
  
-Third method seemed more promising, as dynamic loading is also applicable in ```CommonJs Environment```, however ```ESLint``` yelled at me for my approach frequently.
+ 2. <strong>Working with Loading Mechanism </strong>
+
+      *  First method is a very basic method but uses ```HTTP calls for Asynchronous loading```. This won't play nicely in offline apps hence was eliminated after discussion with mentors.
  
-I used CommonJs methods to dump JSON files into the library, and basic JavaScript to switch between Default language JSON and Current locale JSON.
+      *  Second method depends on external dependency, consequently I tried to avoid using this method.
  
-If a JSON for the current locale is not available, I had to load default JSON, which can be done easily using ```try{}.. catch{}``` JavaScript syntax.
+      *  Third method seemed more promising as dynamic loading is also applicable in ```CommonJs Environment```, however ```ESLint``` yelled at me for my approach frequently.
  
-Here we can instantiate default JSON in object directly and use ```try{}... catch{}```  for current locale JSON, even if asynchronous loading fails for current locale, object will already have a default json file and library will be good to go in any exceptional case.
+*I used CommonJs methods to dump JSON files into the library, and basic JavaScript to switch between Default language JSON and Current locale JSON.*
+ 
+*If a JSON for the current locale is not available, I had to load default JSON, which can be done easily using ```try{}.. catch{}``` JavaScript syntax.*
+ 
+Here we can ***instantiate default JSON*** in object directly and use ***```try{}... catch{}```***  for current locale JSON, even if asynchronous loading fails for current locale, object will already have a default json file and library will be good to go in any exceptional case.
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
  
 ## What Next
  
-After the end of the upcoming week, Phase one Evaluations will be held from 12 July onwards. According to GSoC timeline mentors will review code and will pass and fail students after analysing the work they had done till now.
+ > ***After the end of the upcoming week, Phase one Evaluations will be held from 12 July onwards. According to GSoC timeline mentors will review code and will pass and fail students after analysing the work they had done till now.***
  
-I have completed almost all the tasks that I had committed before Phase one evaluations.🥳🥳 In the upcoming week I will design a test suite for I18n, language switchers and prepare for my phase one evaluations.
+* I have completed almost all the tasks that I had committed before Phase one evaluations.🥳🥳 In the upcoming week I will design a test suite for I18n, language switchers and prepare for my phase one evaluations. ☑️
  
-I will also start working parallely on Mobile App and Simulator as well.
+* I will also start working parallely on Mobile App and Simulator as well.◾✍️
  
 For more, stay connected!!
 
