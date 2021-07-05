@@ -68,7 +68,7 @@ iii. Use ```ES6``` or ```CommonJs``` environment provided by webpacker
  
 *If a JSON for the current locale is not available, I had to load default JSON, which can be done easily using ```try{}.. catch{}``` JavaScript syntax.*
  
-Here we can ***instantiate default JSON** in object directly and use ***```try{}... catch{}```***  for current locale JSON, even if asynchronous loading fails for current locale, object will already have a default json file and library will be good to go in any exceptional case.
+Here we can ***instantiate default JSON*** in object directly and use ***```try{}... catch{}```***  for current locale JSON, even if asynchronous loading fails for current locale, object will already have a default json file and library will be good to go in any exceptional case.
 
 
 --------------------------------------------------------------------------------------------------------------------------
