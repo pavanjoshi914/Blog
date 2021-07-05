@@ -45,18 +45,17 @@ Before ```banana-I18n``` I proposed two integrations of ```i18n-js``` in differe
  
       *  Basically this library allows us the instantiation of a constructor which can hold an object named ```messages``` which when passed to the constructor, the library interprets it through their scripts and provides I18n support for JS based modules.
  
-Oops!😬 Library don't provide their own ***Asynchronous mechanism*** to load JSON in the library, Here I had to implement ***loading mechanism*** by myself.
+  Oops!😬 Library don't provide their own ***Asynchronous mechanism*** to load JSON in the library, Here I had to implement ***loading mechanism*** by myself.
  
-Here I tested three Asynchronous loading mechanisms ⤵️
+  Here I tested three Asynchronous loading mechanisms ⤵️
  
-i. Use of ```Fetch API``` in Web Environment
+  i. Use of ```Fetch API``` in Web Environment
 
-ii. Keeping configuration in Web Environment and implement ```CommonJs``` methods via ```RequireJs library```
+  ii. Keeping configuration in Web Environment and implement ```CommonJs``` methods via ```RequireJs library```
 
-iii. Use ```ES6``` or ```CommonJs``` environment provided by webpacker
+  iii. Use ```ES6``` or ```CommonJs``` environment provided by webpacker
  
- 
- 2. <strong>Working with Loading Mechanism </strong>
+2. <strong>Working with Loading Mechanism </strong>
 
       *  First method is a very basic method but uses ```HTTP calls for Asynchronous loading```. This won't play nicely in offline apps hence was eliminated after discussion with mentors.
  
@@ -74,7 +73,7 @@ Here we can ***instantiate default JSON*** in object directly and use ***```try{
 --------------------------------------------------------------------------------------------------------------------------
 
  
-## What Next
+## What Next ✨
  
  > ***After the end of the upcoming week, Phase one Evaluations will be held from 12 July onwards. According to GSoC timeline mentors will review code and will pass and fail students after analysing the work they had done till now.***
  
