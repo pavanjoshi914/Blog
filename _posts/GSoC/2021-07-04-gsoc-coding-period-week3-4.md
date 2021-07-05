@@ -47,8 +47,9 @@ Before ```banana-I18n``` I proposed two integrations of ```i18n-js``` in differe
  
       *  Basically this library allows us the instantiation of a constructor which can hold an object named ```messages``` which when passed to the constructor, the library interprets it through their scripts and provides I18n support for JS based modules.
 
-    Oops!😬 Library don't provide their own ***Asynchronous mechanism*** to load JSON in the library, Here I had to implement ***loading mechanism*** by myself.
 2. <strong>Working with Loading Mechanism </strong>
+
+    Oops!😬 Library don't provide their own ***Asynchronous mechanism*** to load JSON in the library, Here I had to implement ***loading mechanism*** by myself.
 
     Here I tested three Asynchronous loading mechanisms ⤵️
  
@@ -76,7 +77,7 @@ Here we can ***instantiate default JSON*** in object directly and use ***```try{
 --------------------------------------------------------------------------------------------------------------------------
 
  
-## What Next
+## What Next ✨
  
  > ***After the end of the upcoming week, Phase one Evaluations will be held from 12 July onwards. According to GSoC timeline mentors will review code and will pass and fail students after analysing the work they had done till now.***
  
