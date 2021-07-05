@@ -7,7 +7,7 @@ tags:
 - GSoC
 ---
  
-Hey Readers! The first two weeks of coding period was a great learning experience for me, along with many positive feedbacks by mentors on my pull requests.🤩😎 
+Hey Readers!👋 The first two weeks of coding period was a great learning experience for me, along with positive feedbacks by mentors on my pull requests.🤩😎 
  
 > _**In that duration, I created the I18n infrastructure for the first 10 CV modules along with some parallel coding work and experimentations.**_ 🏁
 
@@ -17,15 +17,17 @@ Hey Readers! The first two weeks of coding period was a great learning experienc
  
 It was the beginning of completing my work on the remaining major modules. Some of the modules like ```logix``` took 500 lines of code changes.
  
-It was quite hard to understand and get familiar with whole codebase in so less time. Unfamiliar modules took an ample amount of time (😧) in understanding Ruby code and JavaScript based logic along with running quality I18n processes on them.
+It was quite hard to understand and get familiar with part of codebase I haven't visited before. Unfamiliar modules took an ample amount of time in understanding Ruby code and JavaScript based logic along with running quality I18n processes on them.
  
  1. <strong>Working with modules</strong>
 
-      *  This week I completed my work in 6 major modules along with provisional completion of the remaining 7 modules. Testing and experimentation will be carried in upcoming weeks before the final deployment to the CircuitVerse Servers.
+      *  This week I completed my work in 6 major modules along with provisional completion of the remaining 7 modules.
+      *  Testing and experimentation will be carried in upcoming weeks before the final deployment to the CircuitVerse Servers.
  
  2. <strong>Working with gems</strong>
  
-       *  I also had a strong hand on understanding the structure of different gems such as ***devise***, ***activerecord error messages***, ***commentator***, ***activity notifications***, ***mailers***, ***paginators*** etc. I also got introduced with the awesome gem ```MailCatcher``` which can catch mails send locally and can show us direct results.
+       * I also had a strong hand on understanding the structure of different gems such as ***devise***, ***activerecord error messages***, ***commentator***, ***activity notifications***, ***mailers***, ***paginators*** etc.
+       * I also got introduced with the awesome gem ```MailCatcher``` which can catch mails send locally and can show us direct results.
  
 At the end of this week, I finally completed my major work on all 23 modules which is a single modules on its own 💠 3 PRs merged and current two under review.
  
@@ -44,27 +46,27 @@ Before ```banana-I18n``` I proposed two integrations of ```i18n-js``` in differe
       *  In our case JavaScript modules are statically compiled by ```webpacker``` and are served on frontend. As ```banana-i18n``` is written purely in JavaScript it was a good choice at first glance.
  
       *  Basically this library allows us the instantiation of a constructor which can hold an object named ```messages``` which when passed to the constructor, the library interprets it through their scripts and provides I18n support for JS based modules.
- 
-Oops!😬 Library don't provide their own ***Asynchronous mechanism*** to load JSON in the library, Here I had to implement ***loading mechanism*** by myself.
- 
-Here I tested three Asynchronous loading mechanisms ⤵️
- 
-i. Use of ```Fetch API``` in Web Environment
 
-ii. Keeping configuration in Web Environment and implement ```CommonJs``` methods via ```RequireJs library```
+    Oops!😬 Library don't provide their own ***Asynchronous mechanism*** to load JSON in the library, Here I had to implement ***loading mechanism*** by myself.
+2. <strong>Working with Loading Mechanism </strong>
 
-iii. Use ```ES6``` or ```CommonJs``` environment provided by webpacker
+    Here I tested three Asynchronous loading mechanisms ⤵️
  
- 
- 2. <strong>Working with Loading Mechanism </strong>
+    * Use of ```Fetch API``` in Web Environment
 
-      *  First method is a very basic method but uses ```HTTP calls for Asynchronous loading```. This won't play nicely in offline apps hence was eliminated after discussion with mentors.
+    * Keeping configuration in Web Environment and implement ```CommonJs``` methods via ```RequireJs library```
+
+    * Use ```ES6``` or ```CommonJs``` environment provided by webpacker
  
-      *  Second method depends on external dependency, consequently I tried to avoid using this method.
+3. <strong>Selecting Loading Mechanism </strong>
+
+    *  First method is a very basic method but uses ```HTTP calls for Asynchronous loading```. This won't play nicely in offline apps hence was eliminated after discussion with mentors.
  
-      *  Third method seemed more promising as dynamic loading is also applicable in ```CommonJs Environment```, however ```ESLint``` yelled at me for my approach frequently.
+    *  Second method depends on external dependency, consequently I tried to avoid using this method.
  
-*I used CommonJs methods to dump JSON files into the library, and basic JavaScript to switch between Default language JSON and Current locale JSON.*
+    *  Third method seemed more promising as dynamic loading is also applicable in ```CommonJs Environment```, however ```ESLint``` yelled at me for my approach frequently.
+ 
+*Finally I decided to go with CommonJs methods to dump JSON files into the library, and basic JavaScript to switch between Default language JSON and Current locale JSON.*
  
 *If a JSON for the current locale is not available, I had to load default JSON, which can be done easily using ```try{}.. catch{}``` JavaScript syntax.*
  
