@@ -1,5 +1,5 @@
 ---
-title: "GSoC Coding Period - Week1 + Week2 Report"
+title: "GSoC Coding Period - Week1 and Week2 Report"
 last_modified_at: 2021-06-25T16:17:02-05:00
 categories:
  - GSoC

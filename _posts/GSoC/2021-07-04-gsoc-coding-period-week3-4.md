@@ -1,5 +1,5 @@
 ---
-title: "GSoC Coding Period - Week3 + Week4 Report"
+title: "GSoC Coding Period - Week3 and Week4 Report"
 last_modified_at: 2021-07-04T16:17:02-05:00
 categories:
 - GSoC
