@@ -6,6 +6,9 @@ categories:
 tags:
 - GSoC
 ---
+
+![i18n-gsoc-cover]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/i18n_gsoc_cover.png)
+
  
 Hey Readers!👋 The first two weeks of coding period was a great learning experience for me, along with positive feedbacks by mentors on my pull requests.🤩😎 
  

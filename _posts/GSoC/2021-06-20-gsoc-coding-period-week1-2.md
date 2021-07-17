@@ -7,6 +7,10 @@ tags:
  - GSoC
 ---
 
+![i18n-gsoc-cover]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/i18n_gsoc_cover.png)
+
+
+
 Hey folks! :wave: GSOC coding period was officially started on 7 June :man_technologist: :man_technologist:. After the community bonding period this is my first article on coding period, sharing my first two weeks coding period experience with CircuitVerse. 
 
 ## My Project Details 📋 

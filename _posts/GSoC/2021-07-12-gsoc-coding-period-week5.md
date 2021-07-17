@@ -7,6 +7,9 @@ tags:
  - GSoC
 ---
 
+![i18n-gsoc-cover]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/i18n_gsoc_cover.png)
+
+
 Currently, I am in the 5th week of the coding period before GSoC phase one evaluations. During this week, I had a relaxing time, as major commits done for phase one evaluations were already completed.
 
 We had a slight change in the timeline for this week. Instead of working on ```Docsify.js``` framework, I started working with Simulator and Mobile App. Along with this, I had to focus on preparing my code for Phase one evaluations.

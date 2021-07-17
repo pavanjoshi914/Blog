@@ -7,6 +7,10 @@ tags:
  - GSoC
 ---
 
+![i18n-gsoc-cover]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/i18n_gsoc_cover.png)
+
+
+
 Hii readers, I am back with one more article on GSoC. After the announcement of GSoC results and after sharing my pre GSoC journey with you, GSoC period finally started on 17 may onwards, cheers!! :tada: :tada:
  
 In case you've missed about what GSoC is? and how I prepared for it in my pre GSoC phase? refer to the previous articles. ⬇️

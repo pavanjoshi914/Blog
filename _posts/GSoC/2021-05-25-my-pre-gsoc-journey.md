@@ -6,6 +6,10 @@ categories:
 tags:
  - GSoC
 ---
+
+![i18n-gsoc-cover]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/i18n_gsoc_cover.png)
+
+
  
 In my previous post, we discussed about **Open Source** and how **GSoC** as an initiative by Google is enhancing Open Source culture and projects.
 

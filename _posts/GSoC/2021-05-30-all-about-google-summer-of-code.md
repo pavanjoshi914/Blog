@@ -11,7 +11,9 @@ At 6pm UTC i.e. (11:30 pm in _**India**_), I received a mail from Google :airpla
  
 Yay!! :stars: I made into _**GSoC**_ in my very first attempt at an early phase of my graduation. Being a _**sophomore**_, I took this as a career elevating opportunity and a platform for _**great learning experience**_ along with exposure to the _**real coding world**_.
  
-![banner]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/post1/banner.png)
+![i18n-gsoc-cover]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/i18n_gsoc_cover.png)
+
+
  
 In this post, I will be discussing what exactly GSoC is and how the Open Source industry along with GSoC are helping students and engineers all around the world to bring out their true potential.
 
