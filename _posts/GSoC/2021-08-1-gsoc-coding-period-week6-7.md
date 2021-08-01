@@ -37,9 +37,9 @@ Following tasks were achieved during this week ⏬
  
 ## Week7 - Localizing Circuit modules and some basic services ☑️
  
-Following tasks were achieved during this week ⏬ 
- 
 Here I worked with element modules, hotkey binders, themers, testbench and sequential circuit element modules
+
+Following tasks were achieved during this week ⏬ 
  
 * I18n in 50 Circuit modules and a total of 17 sequential circuit element modules and testbench as well.
 * I18n in themers and hotkey binders
