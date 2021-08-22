@@ -17,8 +17,8 @@ This blog post summarizes my work done in last week of GSoC coding period.
 
 As I have already finished my working in major 3 platforms i.e. Main Platform, Simulator, and Flutter Mobile App, it was the time to work on DocsifyJS and do relevant improvements in the previous work.
 
-## Mechanism behind I18n for DocsifyJS
-
+## Mechanism behind I18n for DocsifyJS 💻
+ 
  DoscifyJS is simple JavaScript framework, when loaded into HTML file gives theming facility to the documentation. Such project structures can be simply served using Python Simple HTTP servers.
 
 As it is a very simple structure, it is a very good practice to design general i18n mechanism without using any external tool.
