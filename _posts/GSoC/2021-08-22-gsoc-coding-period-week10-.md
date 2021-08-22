@@ -15,7 +15,7 @@ Today marks the end of my 10-week programming journey at CircuitVerse under Goog
 
 This blog post summarizes my work done in last week of GSoC coding period.
 
-As I already finished my work in major three platforms i.e Main Platform, Simulator, and Flutter Mobile App, this was the time to work on DocsifyJS and do relevant improvements in the work done previously.
+As I have already finished my working in major 3 platforms i.e. Main Platform, Simulator, and Flutter Mobile App, it was the time to work on DocsifyJS and do relevant improvements in the previous work.
 
 ## Mechanism behind I18n for DocsifyJS
 
