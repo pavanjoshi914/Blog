@@ -33,7 +33,7 @@ During the first five weeks of the GSoC coding period (Phase One), I did work in
 More Details about my work in Phase one can be found here:
 [I18n Phase One Report]({{ site.baseurl }}{% link _posts/GSoC/2021-07-17-phase-one-evaluations.md %})
 
-## Phase 2️ :-
+## Phase Two :-
 
 ## Simulator 🔌
 
@@ -155,6 +155,6 @@ Special thanks to [Aboobacker MK](https://github.com/tachyons), my mentor. I got
 
 I had a great enhancement in my coding skills from reviews I got from mentors and during GSoC'2021 journey. cheers! 🎉
 
-_*Signing off*_
+_Signing off_
 
 > Thankyou
