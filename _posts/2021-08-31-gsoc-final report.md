@@ -1,5 +1,5 @@
 ---
-title: "Internationalization (I18n) | Final Report | GSoC'2021"
+title: "Final Report - GSoC'2021"
 last_modified_at: 2021-08-31T16:17:02-05:00
 categories:
  - GSoC
@@ -7,7 +7,7 @@ tags:
  - GSoC
 ---
 
-![i18n-gsoc-cover]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/i18n_final_cover.png)
+![i18n-gsoc-cover]({{ site.url }}{{ site.baseurl }}/assets/images/gsoc/post10/i18n_gsoc_cover.png)
 
 This blog report summarizes the work, I executed during the 10 weeks of **_Google Summer of Code 2021_**. GSoC'2021 Coding Period was started on June 7, and officially ended on August 16.
 
@@ -25,7 +25,6 @@ I also aimed to create an ***I18n architecture*** for ***5 major technologies***
 * Flutter (CircuitVerse Mobile App)
 * DocsifyJs (CircuitVerse Docs)
 
-&nbsp;
 
 ## Final Report
 
@@ -34,11 +33,7 @@ During the first five weeks of the GSoC coding period (Phase One), I did work in
 More Details about my work in Phase one can be found here:
 [I18n Phase One Report]({{ site.baseurl }}{% link _posts/GSoC/2021-07-17-phase-one-evaluations.md %})
 
-&nbsp;
-
 ## Phase Two :-
-
-&nbsp;
 
 ## Simulator
 
@@ -53,7 +48,6 @@ In order to localized Simulator I divided it into different sections ⬇️
   2. Sequential Element and TestBench Modules
   3. Project Data, Hotkey Binders, themers etc
 
-&nbsp;
 
 ## Week 6: Begin with Localizing Simulator Configuration Modules
 
@@ -66,7 +60,6 @@ Following tasks were achieved during this week ⏬
 * I18n in Simulator functionalities such as Verilog, SubCircuits, CombinationalAnalysis etc.
 * Completing I18n and testing in all the remaining 36 configuration Modules and functionalities.
 
-&nbsp;
 
 ## Week 7: Localizing Simulator Circuit Element Modules 
 
@@ -80,7 +73,6 @@ Following tasks were achieved during this week ⏬
 
 I finished working on the Simulator which required **800+ lines** of code changes. 🎉
 
-&nbsp;
 
 ## Mobile App
 
@@ -93,7 +85,6 @@ The Mobile App interface in Flutter is made of several built-in widgets and cust
 * Built-in widgets provided Flutter API for Rapid App Development.
 * Custom Widgets created by Developers for specific purposes.
 
-&nbsp;
 
 ## Week 8: Upgrade I18n Workflow and Begin Working with Mobile App
 
@@ -102,8 +93,6 @@ Following tasks were achieved during this week ⏬
 * Upgrade I18n workflow with the more appropriate one.
 * Localization of built-in widgets using flutter_localizations package(package supports 80 different locales)
 * Localize Custom Widgets(UI of Flutter) using Intl package.
-
-&nbsp;
 
 ## Week 9: Continue Localizing Custom Widgets
 
@@ -117,8 +106,6 @@ Following tasks were achieved during this week ⏬
 
 I finished working on the Mobile App which required **2400+ lines** of code changes. 🎉
 
-&nbsp;
-
 ## Week 10: I18n Architecture in DocsifyJS and Final Enhancements
 
 Following tasks were achieved during this week ⏬
@@ -131,7 +118,6 @@ Following tasks were achieved during this week ⏬
   2. Language switching when the user is logged in.
   3. Taking care that, Language switching through switcher and User Form does not conflict with each other.
 
-&nbsp;
 
 ## Implementation
 
@@ -140,7 +126,6 @@ Following tasks were achieved during this week ⏬
 * [I18n in CircuitVerse Mobile App (2500 lines of code)](https://github.com/CircuitVerse/mobile-app/pull/126)
 * [I18n in CircuitVerse Docs (excluding markdown content - 100+ lines of code)](https://github.com/CircuitVerse/CircuitVerseDocs/pull/307)
 
-&nbsp;
 
 ## Major MileStones Achieved 
 
@@ -151,7 +136,6 @@ Following tasks were achieved during this week ⏬
 
 I felt amazing after completing my work on the different technologies and codebases during this journey! 🥳
 
-&nbsp;
 
 ## Future Scope
 
@@ -162,8 +146,6 @@ Some of the major enhancements which can be done are as follows -
 * Translation System for translation management. [Example](https://hosted.weblate.org/projects/f-droid/#languages)
 * Localization of CircuitVerse API to generate a localized JSON response
 * Localization of Model Data
-
-&nbsp;
 
 ## Final Thoughts
 
