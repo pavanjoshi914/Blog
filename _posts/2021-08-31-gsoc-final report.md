@@ -26,7 +26,7 @@ I also aimed to create an ***I18n architecture*** for ***5 major technologies***
 * DocsifyJs (CircuitVerse Docs)
 
 
-## Final Report
+## Final Report 📃
 
 During the first five weeks of the GSoC coding period (Phase One), I did work in the major portions of the Rails codebase. Phase two was majorly dedicated to working on **Simulator**, **Mobile App** and **DocsifyJS** as well.
 
@@ -35,7 +35,7 @@ More Details about my work in Phase one can be found here:
 
 ## Phase Two :-
 
-## Simulator
+## Simulator 🔌
 
 We cannot use Rails I18n in webpacker served JavaScript modules directly. A Wikipedia library **banana-i18n** is used to localize JavaScript-based product.
 
@@ -49,7 +49,7 @@ In order to localized Simulator I divided it into different sections ⬇️
   3. Project Data, Hotkey Binders, themers etc
 
 
-## Week 6: Begin with Localizing Simulator Configuration Modules
+## Week 6: Begin with Localizing Simulator Configuration Modules 📂
 
 In total, there were 36 configuration modules written in JavaScript, which I had to check and localize without breaking any code.
 
@@ -61,7 +61,7 @@ Following tasks were achieved during this week ⏬
 * Completing I18n and testing in all the remaining 36 configuration Modules and functionalities.
 
 
-## Week 7: Localizing Simulator Circuit Element Modules 
+## Week 7: Localizing Simulator Circuit Element Modules 🔄
 
 I started working with circuit element modules, hotkey binders, themers, testbench and sequential circuit element modules.
 
@@ -74,7 +74,7 @@ Following tasks were achieved during this week ⏬
 I finished working on the Simulator which required **800+ lines** of code changes. 🎉
 
 
-## Mobile App
+## Mobile App 📱
 
 Despite some of the benefits of Flutter, such as rapid Mobile-App development. Flutter was quite in discussion for its uneasiness for internationalization (I18n).
 
@@ -86,7 +86,7 @@ The Mobile App interface in Flutter is made of several built-in widgets and cust
 * Custom Widgets created by Developers for specific purposes.
 
 
-## Week 8: Upgrade I18n Workflow and Begin Working with Mobile App
+## Week 8: Upgrade I18n Workflow and Begin Working with Mobile App 📈 
 
 Following tasks were achieved during this week ⏬
 
@@ -94,7 +94,7 @@ Following tasks were achieved during this week ⏬
 * Localization of built-in widgets using flutter_localizations package(package supports 80 different locales)
 * Localize Custom Widgets(UI of Flutter) using Intl package.
 
-## Week 9: Continue Localizing Custom Widgets
+## Week 9: Continue Localizing Custom Widgets 🚧 
 
 Following tasks were achieved during this week ⏬
 
@@ -106,7 +106,7 @@ Following tasks were achieved during this week ⏬
 
 I finished working on the Mobile App which required **2400+ lines** of code changes. 🎉
 
-## Week 10: I18n Architecture in DocsifyJS and Final Enhancements
+## Week 10: I18n Architecture in DocsifyJS and Final Enhancements ✨
 
 Following tasks were achieved during this week ⏬
 
@@ -119,7 +119,7 @@ Following tasks were achieved during this week ⏬
   3. Taking care that, Language switching through switcher and User Form does not conflict with each other.
 
 
-## Implementation
+## Implementation 💻
 
 * [I18n in CircuitVerse Main Platform (3000 lines of code)](https://github.com/CircuitVerse/CircuitVerse/pull/2397)
 * [I18n in CircuitVerse Simulator (1100 lins of code)](https://github.com/CircuitVerse/CircuitVerse/pull/2368)
@@ -127,7 +127,7 @@ Following tasks were achieved during this week ⏬
 * [I18n in CircuitVerse Docs (excluding markdown content - 100+ lines of code)](https://github.com/CircuitVerse/CircuitVerseDocs/pull/307)
 
 
-## Major MileStones Achieved 
+## Major MileStones Achieved ☑️
 
 * Complete Infrastructure for Internationalization of Rails Platform.
 * Complete Infrastructure for Internationalization of Simulator Platform.
@@ -137,17 +137,17 @@ Following tasks were achieved during this week ⏬
 I felt amazing after completing my work on the different technologies and codebases during this journey! 🥳
 
 
-## Future Scope
+## Future Scope ℹ️
 
 I believe that I18n is not a time-bounded project and has a scope of continuous enhancements.
 
-Some of the major enhancements which can be done are as follows -
+Some of the major enhancements which can be done are as follows - 
 
 * Translation System for translation management. [Example](https://hosted.weblate.org/projects/f-droid/#languages)
 * Localization of CircuitVerse API to generate a localized JSON response
 * Localization of Model Data
-
-## Final Thoughts
+ 
+## Final Thoughts 💭
 
 Firstly, I would like to thank the CircuitVerse community for giving me this amazing opportunity. 
 
@@ -155,6 +155,6 @@ Special thanks to [Aboobacker MK](https://github.com/tachyons), my mentor. I got
 
 I had a great enhancement in my coding skills from reviews I got from mentors and during GSoC'2021 journey. cheers! 🎉
 
-_*Signing off*_
+_Signing off_
 
 > Thankyou
