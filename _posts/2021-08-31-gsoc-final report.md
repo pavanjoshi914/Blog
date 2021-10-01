@@ -158,3 +158,11 @@ I had a great enhancement in my coding skills from reviews I got from mentors an
 _Signing off_
 
 > Thankyou
+
+<script src="https://utteranc.es/client.js"
+        repo="varunherlekar/Blog"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
