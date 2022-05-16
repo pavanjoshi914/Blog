@@ -12,13 +12,13 @@ tags:
 — Rick Falkvinge, Founder of the Swedish pirate party
 
 
-Hey readers 👋! I have been selected as a developer in this year's Summer of Bitcoin 2022 program. Yay!! :stars: 👊 I made into _**Bitcoin Intern**_ in my very first attempt. 
+Hey readers 👋! I have been selected as a developer in this year's Summer of Bitcoin 2022 program. Yay!! :stars: 👊 I made into _**Bitcoin Internship**_ in my very first attempt. 
 
 I consider this as very other achievement after successful completion of Google Summer of Code 2021.
  
 ![sob_banner]({{ site.url }}{{ site.baseurl }}/assets/images/sob/sob_banner.jpg)
  
-In this post, I will be discussing what exactly Summer of Bitcoin is and how this intern can help you to get excellent career opportunities in direction of latest technology and its trends such as Blockchain and Bitcoin.
+In this post, I will be discussing what exactly Summer of Bitcoin is and how this internship can help you to get excellent career opportunities in direction of latest technology and its trends such as Blockchain and Bitcoin.
 
 
 > ***Bitcoin is a virtual currency designed to act as money that gives individual the power to control thier money without the need for traditional banking intermediaries. 💰***
@@ -27,23 +27,23 @@ In this post, I will be discussing what exactly Summer of Bitcoin is and how thi
  
 The Summer of Bitcoin, often abbreviated as SOB is an _**International Annual Internship Program**_. It introduces university students to bitcoin development and designing in which Bitcoin award **stipends** to students who successfully complete **coding project** during summer.
  
-Summer of Bitcoin is a <b>competitive event :computer:</b> in which students apply to mentoring organizations and compete with other aspirants for their selection. The one who completes all the rounds and tasks provided in selection phase gets selected for this intern
+Summer of Bitcoin is a <b>competitive event :computer:</b> in which students apply to mentoring organizations and compete with other aspirants for their selection. The one who completes all the rounds and tasks provided in selection phase gets selected for this internship.
  
->Students who complete Summer of Bitcoin successfully get a handsome amount of <b>$3000 dollars</b> :dollar: as a stipend and _**Intern Certificate**_ from _**Bitcoin**_ :boom:.
+>Students who complete Summer of Bitcoin successfully get a handsome amount of <b>$3000 dollars</b> :dollar: as a stipend and _**Internship Certificate**_ from _**Bitcoin**_ :boom:.
 
 Along with this many different swags such as Bitcoin hardware wallet (interesting), Hoddies etc are waiting for you.
  
 ## Summer of Bitcoin Stats 📊 
 
-In 2022, 20317 applications coming from all around the world for this intern, out of which only 82 participants where able to make into this intern. After the release of stats this made me feel great as well as overwhelmed for being one of the selected participant.
+In 2022, 20317 applications coming from all around the world for this internship, out of which only 82 participants where able to make into this internship. After the release of stats this made me feel great as well as overwhelmed for being one of the selected participant.
 
 ![sob_stats]({{ site.url }}{{ site.baseurl }}/assets/images/sob/sob_stats.png)
  
- Key Benefits of Bitcoin Intern - ☑️
+ Key Benefits of Bitcoin Internship - ☑️
 
 * Get to learn about the working of latest technology trends and Bitcoin which is one of the worlds biggest monetary revolution :dizzy:.
-* Handsome amount of $3000 dollars as a stipend along with intern swags 🤩.
-* Bitcoin Intern Certification :stars:.
+* Handsome amount of $3000 dollars as a stipend along with internship swags 🤩.
+* Bitcoin Internship Certification :stars:.
 * Direct job referrals in Bitcoin companies around the world
 * Fundings for different Bitcoin based startups, get connected with investors and advisors
 * Open Source annual grants
