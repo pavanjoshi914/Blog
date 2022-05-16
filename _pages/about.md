@@ -4,7 +4,11 @@ title: "About"
 ---
 # <a href="https://www.linkedin.com/in/pavan-joshi-177873192/"> Hello, Folks! I'm Pavan Joshi</a><img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
-B.tech 2nd year Computer Engineering student. Currently working as a Contributor in Open Source organization CircuitVerse. Student software developer at Google summer of code 2021. Passionate about Software Development, AI and open source. Also, have some experience in Android Development. 
+B.Tech 3rd year Computer Engineering student. Currently working as a Contributor in few of the Open Source organizations such as @CircuitVerse @Alby. 
+
+Passionate about Software Development, AI and open source. Also, have some experience in Android Development. 
+
+Got Selected in some of the global events such as Google Summer of Code and Summer of Bitcoin. In free time working on self startup oriented projects. 
 
 # My Tech Stack 🔧
 ## Programming Languages 🔥
