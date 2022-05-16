@@ -14,7 +14,7 @@ tags:
 
 Hey readers 👋! I have been selected as a developer in this year's Summer of Bitcoin 2022 program. Yay!! :stars: 👊 I made into _**Bitcoin Intern**_ in my very first attempt. 
 
-I consider this as another achievement after successful completion of Google Summer of Code 2021.
+I consider this as very other achievement after successful completion of Google Summer of Code 2021.
  
 ![sob_banner]({{ site.url }}{{ site.baseurl }}/assets/images/sob/sob_banner.jpg)
  
@@ -25,11 +25,13 @@ In this post, I will be discussing what exactly Summer of Bitcoin is and how thi
 
 ## What is Summer of Bitcoin? 🤔
  
-The Summer of Bitcoin, often abbreviated as SOB is an _**International Annual Internship Program**_. It introduces university students to bitcoin development and designing in which Bitcoin award **stipends** to students who successfully complete _**coding project**_ during summer.
+The Summer of Bitcoin, often abbreviated as SOB is an _**International Annual Internship Program**_. It introduces university students to bitcoin development and designing in which Bitcoin award **stipends** to students who successfully complete **coding project** during summer.
  
 Summer of Bitcoin is a <b>competitive event :computer:</b> in which students apply to mentoring organizations and compete with other aspirants for their selection. The one who completes all the rounds and tasks provided in selection phase gets selected for this intern
  
->Students who complete Summer of Bitcoin successfully get a handsome amount of <b>$3000 dollars</b> :dollar: as a stipend and _**Intern Certificate**_ from _**Bitcoin**_ :boom:. Along with this many different swags such as Bitcoin hardware wallet (interesting), Hoddies etc are waiting for you.
+>Students who complete Summer of Bitcoin successfully get a handsome amount of <b>$3000 dollars</b> :dollar: as a stipend and _**Intern Certificate**_ from _**Bitcoin**_ :boom:.
+
+Along with this many different swags such as Bitcoin hardware wallet (interesting), Hoddies etc are waiting for you.
  
 ## Summer of Bitcoin Stats 📊 
 
@@ -47,13 +49,13 @@ In 2022, 20317 applications coming from all around the world for this intern, ou
 * Open Source annual grants
 
 
-## Summer Of Bitcoin Journey 🖥️ 
+## Summer Of Bitcoin Journey ⬇️
  
-After completing my Google Summer of Code 2021, I was much more enthusiast to start working on some more challenging codebases and solve some hard problems. I got to know about Summer of Bitcoin from one of my friend. I had no prior experience in blockchain and working of Bitcoin.
+After completing my Google Summer of Code 2021, I become more enthusiastic for working on challenging codebases and solving harder problems. One of my friend introduced me to Summer of Bitcoin.
 
-I was able to crack screening round through my coding skills and elevated myself in the direction of Bitcoin and blockchain learnt more about it.
+Initially, I had no prior experience in blockchain and working of Bitcoin. I was able to crack **screening round** through my coding skills and elevated myself in the direction of Bitcoin and Blockchain by learning more about it.
 
-During this time, I got to meet many different Bitcoin contributors from different parts of the world which really made my excited to give my best in this direction
+During this time, I got to meet many different Bitcoin contributors from different parts of the world. It really excited me to give my best in this direction.
  
 **This is my acceptance letter from Bitcoin** 🔥
  
@@ -61,7 +63,7 @@ During this time, I got to meet many different Bitcoin contributors from differe
  
 ## Project Details 📑 
 
-I will be working on making Bitcoin payments transactions smart with structured metadata with Alby Community. This is possible by extending the latest technologies such as WebLN and LNURL which are being build on top of the Bitcoin and lightning network.
+I will be working on making Bitcoin payments transactions smart with structured metadata with Alby Community. This is possible by extending the latest technologies such as **WebLN** and **LNURL** which are being build on top of the **Bitcoin and Lightning Network**.
 
 The aim of this project is to extend existing standards such as Webln and lnurl to enrich transactions with additional information as structured metadata so that transactions containing static data contain more meaningful information giving more interactivity to the transactions.
 
@@ -70,9 +72,9 @@ The aim of this project is to extend existing standards such as Webln and lnurl 
    
 * Research different use cases which supports the concept of making transactions smarter with structured metadata.
 * Markup metadata so that it is structured and properly organized using specifications such as schema.org.
-* Writing specification for extending standards such as Webln on client-side as well as Alby wallet side.
-* Implementation of the specification in Alby.
-* Different prototypes demonstrating use cases
+* Writing specifications for extending standards such as Webln on client-side as well as Alby wallet side.
+* Implementation of the specifications in Alby.
+* Different prototypes demonstrating use cases.
 
 For more, stay connected!!!
  
